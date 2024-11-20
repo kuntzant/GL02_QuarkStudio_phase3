@@ -29,13 +29,13 @@ function getRoomCapacity(roomNumber) {
     if (!roomFound) {
         console.log("La salle est introuvable. Veuillez vérifier le numéro de la salle.".red);
     } else {
-        console.log(`La salle ` + `${roomNumber}`.grey + ` peut accueillir jusqu'à ` + `${maxCapacity}`.green + ` personnes.`);
+        console.log(`La salle ` + `${roomNumber}`.brightCyan + ` peut accueillir jusqu'à ` + `${maxCapacity}`.green + ` personnes.`);
     }
 }
 
 function promptRoomNumber() {
     rl.question("Veuillez entrer le numéro de la salle : ", (roomNumber) => {
-        getRoomCapacity(roomNumber);
+        getRoomCapacity(roomNumber.toUpperCase());
         rl.close();
     });
 }

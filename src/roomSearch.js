@@ -23,13 +23,13 @@ function searchRoomsForCourse(courseCode) {
         console.log("Aucune salle n'a pu être trouvée pour ce cours.".yellow);
     } else {
         console.log("Salles associées au cours " + courseCode.cyan + " :");
-        console.log(rooms.join('\n').grey);
+        console.log(rooms.join('\n').brightCyan);
     }
 }
 
 function promptCourseCode() {
     rl.question("Veuillez entrer le code du cours : ", (courseCode) => {
-        searchRoomsForCourse(courseCode);
+        searchRoomsForCourse(courseCode.toUpperCase());
         rl.close();
     });
 }
