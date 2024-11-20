@@ -22,7 +22,6 @@ function processCruData(rootPath) {
         if (!summary[name]) {
             summary[name] = {
                 totalSessions: 0,
-                participants: 0,
                 rooms: new Set(),
                 cours: []
             };
@@ -31,7 +30,7 @@ function processCruData(rootPath) {
         summary[name].totalSessions += sessions.length;
         sessions.forEach(session => {
             if (session.P) {
-                summary[name].participants += parseInt(session.P, 10);
+                participants = parseInt(session.P, 10);
             }
             room = ' ';
             time = ' ';
@@ -47,6 +46,7 @@ function processCruData(rootPath) {
             summary[name].cours.push({
                 category: session.C1,
                 room : room,
+                participants : participants,
                 day: day,
                 time: time,
                 subCategory: session.F1
