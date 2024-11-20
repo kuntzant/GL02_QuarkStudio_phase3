@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path=require('path')
 
 /**
  * Fonction pour lire et analyser un fichier CRU
@@ -6,9 +7,9 @@ const fs = require('fs');
  * @returns {object} - Données organisées
  */
 function parseCRUFile(filePath) {
-  const data = fs.readFileSync(filePath, 'utf8');
+  const content = fs.readFileSync(filePath, 'utf8');
   const lines = data.split('\n');
-  const result = { courses: {}, rooms: {} };
+  const data = []
   let currentCourse = null;
 
   lines.forEach(line => {
@@ -51,5 +52,5 @@ function parseCRUFile(filePath) {
 }
 
 // Exemple d'utilisation
-const data = parseCRUFile('./data.cru'); // Remplacez par le chemin vers votre fichier
+const data = parseCRUFile('cru./data.'); // Remplacez par le chemin vers votre fichier
 console.log(JSON.stringify(data, null, 2));
