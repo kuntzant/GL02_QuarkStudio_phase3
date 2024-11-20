@@ -8,7 +8,7 @@ const path = require('path');
  */
 function parseCruFile(filePath) {
     const content = fs.readFileSync(filePath, 'utf-8');
-    const lines = content.split('\n');
+    const lines = content.split('\n').slice(8);
     const data = [];
 
     let currentCourse = null;
