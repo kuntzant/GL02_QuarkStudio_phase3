@@ -1,0 +1,8181 @@
+{
+  "UVUV": {
+    "totalSessions": 20,
+    "participants": 0,
+    "rooms": [],
+    "slots": [
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      }
+    ]
+  },
+  "AP03": {
+    "totalSessions": 2,
+    "participants": 49,
+    "rooms": [
+      "B103//"
+    ],
+    "slots": [
+      {
+        "room": "B103//",
+        "day": "V",
+        "time": "9:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B103//",
+        "day": "V",
+        "time": "13:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "BI01": {
+    "totalSessions": 2,
+    "participants": 50,
+    "rooms": [
+      "P101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P101//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "BI02": {
+    "totalSessions": 3,
+    "participants": 50,
+    "rooms": [
+      "S104//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S104//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      }
+    ]
+  },
+  "CL02": {
+    "totalSessions": 5,
+    "participants": 135,
+    "rooms": [
+      "A001//",
+      "S104//",
+      "S203//",
+      "A207//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "A207//",
+        "day": "V",
+        "time": "8:00-10:00"
+      },
+      {
+        "room": "A207//",
+        "day": "ME",
+        "time": "10:00-12:00"
+      }
+    ]
+  },
+  "CL07": {
+    "totalSessions": 5,
+    "participants": 75,
+    "rooms": [
+      "S103//",
+      "P103//",
+      "S104//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S103//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P103//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P103//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "CL10": {
+    "totalSessions": 4,
+    "participants": 126,
+    "rooms": [
+      "B207//",
+      "A105//",
+      "S204//",
+      "A203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B207//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A203//",
+        "day": "L",
+        "time": "16:00-19:00"
+      }
+    ]
+  },
+  "CLE1": {
+    "totalSessions": 2,
+    "participants": 6,
+    "rooms": [
+      "B207//",
+      "S204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B207//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "CLE2": {
+    "totalSessions": 2,
+    "participants": 8,
+    "rooms": [
+      "A001//",
+      "S203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "CM02": {
+    "totalSessions": 6,
+    "participants": 183,
+    "rooms": [
+      "A001//",
+      "B210//",
+      "B001//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B210//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B210//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "B001//",
+        "day": "L",
+        "time": "8:00-12:00"
+      },
+      {
+        "room": "B001//",
+        "day": "ME",
+        "time": "14:00-18:00"
+      },
+      {
+        "room": "B001//",
+        "day": "L",
+        "time": "14:00-18:00"
+      }
+    ]
+  },
+  "CM10": {
+    "totalSessions": 3,
+    "participants": 60,
+    "rooms": [
+      "C002//",
+      "B201//",
+      "B007//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B007//",
+        "day": "MA",
+        "time": "10:00-13:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "CM10T1": {
+    "totalSessions": 7,
+    "participants": 240,
+    "rooms": [
+      "C002//",
+      "B201//",
+      "B204//",
+      "B007//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B204//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B007//",
+        "day": "ME",
+        "time": "13:00-16:00"
+      },
+      {
+        "room": "B007//",
+        "day": "ME",
+        "time": "16:00-19:00"
+      },
+      {
+        "room": "B007//",
+        "day": "V",
+        "time": "13:00-16:00"
+      }
+    ]
+  },
+  "CS01": {
+    "totalSessions": 5,
+    "participants": 96,
+    "rooms": [
+      "B101//",
+      "C202//",
+      "C204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C202//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C204//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C202//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C204//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "CS01A": {
+    "totalSessions": 3,
+    "participants": 24,
+    "rooms": [
+      "B101//",
+      "C202//",
+      "C204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C202//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C204//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "CS03": {
+    "totalSessions": 3,
+    "participants": 88,
+    "rooms": [
+      "C105//",
+      "A203//",
+      "A205//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C105//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A203//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "A205//",
+        "day": "L",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "CS06": {
+    "totalSessions": 1,
+    "participants": 17,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "8:00-8:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "CS22": {
+    "totalSessions": 6,
+    "participants": 68,
+    "rooms": [
+      "P104//",
+      "A208//",
+      "A206//"
+    ],
+    "slots": [
+      {
+        "room": "P104//",
+        "day": "L",
+        "time": "15:00-17:00",
+        "subCategory": null
+      },
+      {
+        "room": "A208//",
+        "day": "L",
+        "time": "15:00-17:00",
+        "subCategory": null
+      },
+      {
+        "room": "A206//",
+        "day": "L",
+        "time": "15:00-17:00",
+        "subCategory": null
+      },
+      {
+        "room": "A206//",
+        "day": "L",
+        "time": "9:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A208//",
+        "day": "L",
+        "time": "9:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P104//",
+        "day": "L",
+        "time": "9:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "DS01": {
+    "totalSessions": 5,
+    "participants": 146,
+    "rooms": [
+      "C104//",
+      "S104//",
+      "S203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C104//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      }
+    ]
+  },
+  "EA07": {
+    "totalSessions": 5,
+    "participants": 122,
+    "rooms": [
+      "B101//",
+      "B103//",
+      "P202//",
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B103//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "J",
+        "time": "16:00-20:00"
+      },
+      {
+        "room": "EXT1//",
+        "day": "ME",
+        "time": "8:00-12:00"
+      }
+    ]
+  },
+  "EB02": {
+    "totalSessions": 1,
+    "participants": 6,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "8:30-9:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EB03": {
+    "totalSessions": 1,
+    "participants": 7,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "9:00-9:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "EC01": {
+    "totalSessions": 2,
+    "participants": 80,
+    "rooms": [
+      "M204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "M204//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "M204//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EC02": {
+    "totalSessions": 1,
+    "participants": 4,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "9:30-10:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EI01": {
+    "totalSessions": 2,
+    "participants": 80,
+    "rooms": [
+      "B105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B105//",
+        "day": "J",
+        "time": "12:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B105//",
+        "day": "J",
+        "time": "16:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EI01A": {
+    "totalSessions": 2,
+    "participants": 54,
+    "rooms": [
+      "S102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S102//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EN01": {
+    "totalSessions": 6,
+    "participants": 133,
+    "rooms": [
+      "C002//",
+      "D106//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "L",
+        "time": "13:00-14:00",
+        "subCategory": null
+      },
+      {
+        "room": "D106//",
+        "day": "J",
+        "time": "17:00-20:00",
+        "subCategory": null
+      },
+      {
+        "room": "D106//",
+        "day": "V",
+        "time": "14:00-17:00",
+        "subCategory": null
+      },
+      {
+        "room": "D106//",
+        "day": "ME",
+        "time": "14:00-17:00",
+        "subCategory": null
+      },
+      {
+        "room": "D106//",
+        "day": "J",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D106//",
+        "day": "L",
+        "time": "16:00-19:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EN08": {
+    "totalSessions": 4,
+    "participants": 72,
+    "rooms": [
+      "S204//",
+      "A105//",
+      "J004//",
+      "A205//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S204//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "J004//",
+        "day": "L",
+        "time": "14:00-18:00"
+      },
+      {
+        "room": "A205//",
+        "day": "L",
+        "time": "14:00-18:00"
+      }
+    ]
+  },
+  "EP01": {
+    "totalSessions": 3,
+    "participants": 114,
+    "rooms": [
+      "C102//",
+      "S202//",
+      "B103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C102//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S202//",
+        "day": "ME",
+        "time": "14:00-16:00"
+      },
+      {
+        "room": "B103//",
+        "day": "MA",
+        "time": "16:00-18:00"
+      }
+    ]
+  },
+  "EV00A": {
+    "totalSessions": 3,
+    "participants": 101,
+    "rooms": [
+      "B101//",
+      "S203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "L",
+        "time": "13:00-14:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "L",
+        "time": "14:00-15:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EV01": {
+    "totalSessions": 1,
+    "participants": 72,
+    "rooms": [
+      "A001//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "ME",
+        "time": "14:00-17:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EV02": {
+    "totalSessions": 1,
+    "participants": 24,
+    "rooms": [
+      "S102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S102//",
+        "day": "L",
+        "time": "9:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EV04A": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "B208//",
+      "B204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B208//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B204//",
+        "day": "L",
+        "time": "16:00-17:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EV11": {
+    "totalSessions": 3,
+    "participants": 87,
+    "rooms": [
+      "P102//",
+      "S101//",
+      "S201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P102//",
+        "day": "V",
+        "time": "8:30-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "L",
+        "time": "16:00-17:30",
+        "subCategory": null
+      },
+      {
+        "room": "S201//",
+        "day": "V",
+        "time": "10:00-11:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "EV13": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "B101//",
+      "B201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "L",
+        "time": "13:00-14:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EV13T1": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "B101//",
+      "B201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "MA",
+        "time": "18:00-19:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "EV14": {
+    "totalSessions": 6,
+    "participants": 132,
+    "rooms": [
+      "P102//",
+      "P201//",
+      "A103//",
+      "B208//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P102//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "MA",
+        "time": "13:00-14:30",
+        "subCategory": null
+      },
+      {
+        "room": "A103//",
+        "day": "J",
+        "time": "15:00-16:30",
+        "subCategory": null
+      },
+      {
+        "room": "B208//",
+        "day": "L",
+        "time": "13:00-14:30",
+        "subCategory": null
+      },
+      {
+        "room": "B208//",
+        "day": "MA",
+        "time": "8:00-9:30",
+        "subCategory": null
+      },
+      {
+        "room": "B208//",
+        "day": "J",
+        "time": "13:00-14:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "FA1E": {
+    "totalSessions": 1,
+    "participants": 16,
+    "rooms": [
+      "S201//"
+    ],
+    "slots": [
+      {
+        "room": "S201//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "FA2E": {
+    "totalSessions": 1,
+    "participants": 16,
+    "rooms": [
+      "S201//"
+    ],
+    "slots": [
+      {
+        "room": "S201//",
+        "day": "J",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "FB1E": {
+    "totalSessions": 1,
+    "participants": 16,
+    "rooms": [
+      "S201//"
+    ],
+    "slots": [
+      {
+        "room": "S201//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "FB1P": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "S201//",
+      "S101//"
+    ],
+    "slots": [
+      {
+        "room": "S201//",
+        "day": "MA",
+        "time": "18:00-20:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "J",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "FB2E": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "S201//"
+    ],
+    "slots": [
+      {
+        "room": "S201//",
+        "day": "ME",
+        "time": "18:00-20:00",
+        "subCategory": null
+      },
+      {
+        "room": "S201//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "FB2P": {
+    "totalSessions": 1,
+    "participants": 18,
+    "rooms": [
+      "S101//"
+    ],
+    "slots": [
+      {
+        "room": "S101//",
+        "day": "L",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "FC1E": {
+    "totalSessions": 1,
+    "participants": 17,
+    "rooms": [
+      "S201//"
+    ],
+    "slots": [
+      {
+        "room": "S201//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "FQ01A": {
+    "totalSessions": 3,
+    "participants": 72,
+    "rooms": [
+      "P101//",
+      "S104//",
+      "A207//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P101//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "A207//",
+        "day": "L",
+        "time": "14:00-16:00"
+      }
+    ]
+  },
+  "FQ54": {
+    "totalSessions": 2,
+    "participants": 20,
+    "rooms": [
+      "S104//"
+    ],
+    "slots": [
+      {
+        "room": "S104//",
+        "day": "V",
+        "time": "13:00-14:00",
+        "subCategory": null
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      }
+    ]
+  },
+  "GE04": {
+    "totalSessions": 4,
+    "participants": 116,
+    "rooms": [
+      "B101//",
+      "B203//",
+      "B205//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "L",
+        "time": "17:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "B205//",
+        "day": "J",
+        "time": "13:00-14:00",
+        "subCategory": null
+      },
+      {
+        "room": "B205//",
+        "day": "ME",
+        "time": "13:00-14:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE10": {
+    "totalSessions": 2,
+    "participants": 58,
+    "rooms": [
+      "C105//",
+      "S102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C105//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "ME",
+        "time": "10:00-11:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE18": {
+    "totalSessions": 1,
+    "participants": 10,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "13:00-13:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE21": {
+    "totalSessions": 8,
+    "participants": 353,
+    "rooms": [
+      "N101//",
+      "M207//",
+      "A105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "N101//",
+        "day": "MA",
+        "time": "16:00-17:30",
+        "subCategory": null
+      },
+      {
+        "room": "M207//",
+        "day": "ME",
+        "time": "16:00-17:30",
+        "subCategory": null
+      },
+      {
+        "room": "M207//",
+        "day": "V",
+        "time": "16:00-17:30",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "L",
+        "time": "14:00-15:30",
+        "subCategory": null
+      },
+      {
+        "room": "M207//",
+        "day": "S",
+        "time": "8:30-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "J",
+        "time": "14:00-15:30",
+        "subCategory": null
+      },
+      {
+        "room": "M207//",
+        "day": "L",
+        "time": "15:30-17:00",
+        "subCategory": null
+      },
+      {
+        "room": "M207//",
+        "day": "S",
+        "time": "10:00-11:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE21R": {
+    "totalSessions": 1,
+    "participants": 9,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "10:00-10:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE21T1": {
+    "totalSessions": 2,
+    "participants": 175,
+    "rooms": [
+      "N101//",
+      "S204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "N101//",
+        "day": "MA",
+        "time": "16:00-17:30",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "MA",
+        "time": "10:30-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE25": {
+    "totalSessions": 5,
+    "participants": 242,
+    "rooms": [
+      "C001//",
+      "S204//",
+      "P201//",
+      "P102//",
+      "S102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C001//",
+        "day": "L",
+        "time": "13:00-14:30",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "L",
+        "time": "14:30-15:30",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "L",
+        "time": "15:30-16:30",
+        "subCategory": null
+      },
+      {
+        "room": "P102//",
+        "day": "L",
+        "time": "16:30-17:30",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "L",
+        "time": "17:30-18:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE28": {
+    "totalSessions": 4,
+    "participants": 101,
+    "rooms": [
+      "M207//",
+      "S204//"
+    ],
+    "slots": [
+      {
+        "room": "M207//",
+        "day": "L",
+        "time": "18:00-19:30",
+        "subCategory": null
+      },
+      {
+        "room": "M207//",
+        "day": "ME",
+        "time": "10:00-11:30",
+        "subCategory": null
+      },
+      {
+        "room": "M207//",
+        "day": "J",
+        "time": "18:00-19:30",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "V",
+        "time": "16:00-17:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE31": {
+    "totalSessions": 5,
+    "participants": 180,
+    "rooms": [
+      "A001//",
+      "S204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "MA",
+        "time": "10:00-11:30",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "L",
+        "time": "18:00-19:30",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "J",
+        "time": "18:00-19:30",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "S",
+        "time": "8:30-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "S",
+        "time": "10:00-11:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE31T1": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "A001//",
+      "S103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "MA",
+        "time": "10:00-11:30",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "MA",
+        "time": "18:00-19:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE33": {
+    "totalSessions": 1,
+    "participants": 24,
+    "rooms": [
+      "B203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B203//",
+        "day": "MA",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE34": {
+    "totalSessions": 3,
+    "participants": 100,
+    "rooms": [
+      "C102//",
+      "S204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C102//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "MA",
+        "time": "16:00-17:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "MA",
+        "time": "17:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE36": {
+    "totalSessions": 4,
+    "participants": 144,
+    "rooms": [
+      "C002//",
+      "A105//",
+      "S102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "MA",
+        "time": "14:00-15:30",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "ME",
+        "time": "18:00-19:30",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "MA",
+        "time": "15:30-17:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "MA",
+        "time": "17:00-18:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE37": {
+    "totalSessions": 1,
+    "participants": 50,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "10:30-11:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE40": {
+    "totalSessions": 2,
+    "participants": 64,
+    "rooms": [
+      "C105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C105//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C105//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE41": {
+    "totalSessions": 1,
+    "participants": 44,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "room": "EXT1//",
+        "day": "L",
+        "time": "13:00-14:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GE44": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "B201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B201//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "MA",
+        "time": "13:00-14:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GL02": {
+    "totalSessions": 5,
+    "participants": 192,
+    "rooms": [
+      "C002//",
+      "M102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "M102//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "M102//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "M102//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "M102//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GP06": {
+    "totalSessions": 6,
+    "participants": 270,
+    "rooms": [
+      "C001//",
+      "S103//",
+      "S203//",
+      "C105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C001//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C105//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "MA",
+        "time": "8:00-10:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GP27": {
+    "totalSessions": 7,
+    "participants": 312,
+    "rooms": [
+      "A002//",
+      "P103//",
+      "P203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A002//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P103//",
+        "day": "MA",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P103//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P103//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P103//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "J",
+        "time": "18:00-20:00"
+      },
+      {
+        "room": "P103//",
+        "day": "MA",
+        "time": "18:00-20:00"
+      }
+    ]
+  },
+  "GP28": {
+    "totalSessions": 7,
+    "participants": 206,
+    "rooms": [
+      "C002//",
+      "P102//",
+      "A206//",
+      "P104//",
+      "B106//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P102//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P102//",
+        "day": "ME",
+        "time": "18:00-20:00",
+        "subCategory": null
+      },
+      {
+        "room": "P102//",
+        "day": "J",
+        "time": "14:00-18:00"
+      },
+      {
+        "room": "A206//",
+        "day": "J",
+        "time": "14:00-18:00"
+      },
+      {
+        "room": "P104//",
+        "day": "V",
+        "time": "8:00-12:00"
+      },
+      {
+        "room": "B106//",
+        "day": "V",
+        "time": "8:00-12:00"
+      }
+    ]
+  },
+  "GS10": {
+    "totalSessions": 2,
+    "participants": 120,
+    "rooms": [
+      "C002//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "C002//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GS11": {
+    "totalSessions": 2,
+    "participants": 120,
+    "rooms": [
+      "C001//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C001//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "C001//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GS13": {
+    "totalSessions": 2,
+    "participants": 128,
+    "rooms": [
+      "C002//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C002//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GS15": {
+    "totalSessions": 2,
+    "participants": 116,
+    "rooms": [
+      "B105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B105//",
+        "day": "MA",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B105//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GS16": {
+    "totalSessions": 1,
+    "participants": 20,
+    "rooms": [
+      "B202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B202//",
+        "day": "J",
+        "time": "14:00-17:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "GS21": {
+    "totalSessions": 2,
+    "participants": 29,
+    "rooms": [
+      "C103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C103//",
+        "day": "ME",
+        "time": "14:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      }
+    ]
+  },
+  "IF01": {
+    "totalSessions": 5,
+    "participants": 211,
+    "rooms": [
+      "A001//",
+      "S102//",
+      "C103//",
+      "S203//",
+      "S202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C103//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S202//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IF02A": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "P102//",
+      "S203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P102//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IF06A": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "P101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P101//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IF09": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "S101//",
+      "P101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S101//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IF10": {
+    "totalSessions": 2,
+    "participants": 60,
+    "rooms": [
+      "C104//",
+      "P102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C104//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P102//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IF14": {
+    "totalSessions": 6,
+    "participants": 196,
+    "rooms": [
+      "B105//",
+      "B106//",
+      "S103//",
+      "C103//",
+      "S202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B105//",
+        "day": "L",
+        "time": "14:00-15:00",
+        "subCategory": null
+      },
+      {
+        "room": "B106//",
+        "day": "L",
+        "time": "15:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C103//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S202//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IF17": {
+    "totalSessions": 2,
+    "participants": 24,
+    "rooms": [
+      "B207//",
+      "A205//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B207//",
+        "day": "ME",
+        "time": "13:00-15:00",
+        "subCategory": null
+      },
+      {
+        "room": "A205//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IF19": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "C103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C103//",
+        "day": "J",
+        "time": "13:00-15:00",
+        "subCategory": null
+      },
+      {
+        "room": "C103//",
+        "day": "J",
+        "time": "15:00-17:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IF20": {
+    "totalSessions": 2,
+    "participants": 28,
+    "rooms": [
+      "S203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S203//",
+        "day": "ME",
+        "time": "9:00-11:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "ME",
+        "time": "11:00-13:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IF26": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IF28": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "MA",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IF37": {
+    "totalSessions": 3,
+    "participants": 104,
+    "rooms": [
+      "EXT1//",
+      "A203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A203//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "A203//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IFE8": {
+    "totalSessions": 2,
+    "participants": 4,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "MA",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "ISIC01": {
+    "totalSessions": 1,
+    "participants": 32,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "S",
+        "time": "15:30-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "ISIC02": {
+    "totalSessions": 1,
+    "participants": 15,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "S",
+        "time": "16:00-16:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "ISIC03": {
+    "totalSessions": 1,
+    "participants": 9,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "S",
+        "time": "16:30-17:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IT00": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "C201//"
+    ],
+    "slots": [
+      {
+        "room": "C201//",
+        "day": "J",
+        "time": "18:00-20:00",
+        "subCategory": null
+      },
+      {
+        "room": "C201//",
+        "day": "ME",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "IT01": {
+    "totalSessions": 2,
+    "participants": 16,
+    "rooms": [
+      "C203//"
+    ],
+    "slots": [
+      {
+        "room": "C203//",
+        "day": "MA",
+        "time": "18:00-20:00",
+        "subCategory": null
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      }
+    ]
+  },
+  "KO00": {
+    "totalSessions": 1,
+    "participants": 16,
+    "rooms": [
+      "C207//"
+    ],
+    "slots": [
+      {
+        "room": "C207//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LC00": {
+    "totalSessions": 1,
+    "participants": 16,
+    "rooms": [
+      "C101//"
+    ],
+    "slots": [
+      {
+        "room": "C101//",
+        "day": "MA",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LC01": {
+    "totalSessions": 1,
+    "participants": 16,
+    "rooms": [
+      "C201//"
+    ],
+    "slots": [
+      {
+        "room": "C201//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE01": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "C203//",
+      "C205//"
+    ],
+    "slots": [
+      {
+        "room": "C203//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C205//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE01T1": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "C204//",
+      "C201//"
+    ],
+    "slots": [
+      {
+        "room": "C204//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C201//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE02": {
+    "totalSessions": 7,
+    "participants": 126,
+    "rooms": [
+      "C210//"
+    ],
+    "slots": [
+      {
+        "room": "C210//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C210//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C210//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C210//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "C210//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C210//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C210//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE02T1": {
+    "totalSessions": 4,
+    "participants": 64,
+    "rooms": [
+      "C204//",
+      "C210//"
+    ],
+    "slots": [
+      {
+        "room": "C204//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C210//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C210//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C210//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE03": {
+    "totalSessions": 9,
+    "participants": 144,
+    "rooms": [
+      "C206//",
+      "C208//",
+      "C204//",
+      "C207//"
+    ],
+    "slots": [
+      {
+        "room": "C206//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "C208//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C204//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "C207//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C207//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "C208//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C208//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C208//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C208//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE03R": {
+    "totalSessions": 1,
+    "participants": 1,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "room": "EXT1//",
+        "day": "V",
+        "time": "11:30-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE03T1": {
+    "totalSessions": 6,
+    "participants": 96,
+    "rooms": [
+      "C206//",
+      "C208//",
+      "C201//"
+    ],
+    "slots": [
+      {
+        "room": "C206//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C208//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C201//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C208//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C208//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C208//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE08": {
+    "totalSessions": 15,
+    "participants": 247,
+    "rooms": [
+      "C207//",
+      "S104//",
+      "C204//",
+      "C203//",
+      "C206//",
+      "C205//",
+      "P102//",
+      "P101//"
+    ],
+    "slots": [
+      {
+        "room": "C207//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C204//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C203//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C206//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C205//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C204//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C205//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C206//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C205//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C205//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P102//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C206//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C205//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE08R": {
+    "totalSessions": 1,
+    "participants": 5,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "room": "EXT1//",
+        "day": "V",
+        "time": "12:00-12:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE08T1": {
+    "totalSessions": 5,
+    "participants": 80,
+    "rooms": [
+      "C203//",
+      "C204//",
+      "C207//",
+      "C205//",
+      "C201//"
+    ],
+    "slots": [
+      {
+        "room": "C203//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C204//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C207//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C205//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C201//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE11": {
+    "totalSessions": 3,
+    "participants": 48,
+    "rooms": [
+      "P201//",
+      "C203//",
+      "C207//"
+    ],
+    "slots": [
+      {
+        "room": "P201//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C203//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C207//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LE19": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "C203//",
+      "C204//"
+    ],
+    "slots": [
+      {
+        "room": "C203//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C204//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LEM1": {
+    "totalSessions": 1,
+    "participants": 12,
+    "rooms": [
+      "C204//"
+    ],
+    "slots": [
+      {
+        "room": "C204//",
+        "day": "L",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LG00": {
+    "totalSessions": 1,
+    "participants": 18,
+    "rooms": [
+      "C203//"
+    ],
+    "slots": [
+      {
+        "room": "C203//",
+        "day": "MA",
+        "time": "13:00-15:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LG01": {
+    "totalSessions": 1,
+    "participants": 18,
+    "rooms": [
+      "C201//"
+    ],
+    "slots": [
+      {
+        "room": "C201//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LG02": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "C206//"
+    ],
+    "slots": [
+      {
+        "room": "C206//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C206//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LG03": {
+    "totalSessions": 2,
+    "participants": 34,
+    "rooms": [
+      "C201//",
+      "C203//"
+    ],
+    "slots": [
+      {
+        "room": "C201//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C203//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LG10": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "C203//"
+    ],
+    "slots": [
+      {
+        "room": "C203//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C203//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LI03": {
+    "totalSessions": 2,
+    "participants": 22,
+    "rooms": [
+      "B205//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B205//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B205//",
+        "day": "MA",
+        "time": "16:00-17:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LO01": {
+    "totalSessions": 3,
+    "participants": 42,
+    "rooms": [
+      "P101//",
+      "S103//",
+      "P104//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P101//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P104//",
+        "day": "S",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LO14": {
+    "totalSessions": 5,
+    "participants": 192,
+    "rooms": [
+      "C001//",
+      "D206//",
+      "D202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C001//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D206//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "D206//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "D206//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LS00": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "C203//"
+    ],
+    "slots": [
+      {
+        "room": "C203//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C203//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LS01": {
+    "totalSessions": 1,
+    "participants": 19,
+    "rooms": [
+      "C207//"
+    ],
+    "slots": [
+      {
+        "room": "C207//",
+        "day": "J",
+        "time": "17:00-19:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LS02": {
+    "totalSessions": 3,
+    "participants": 50,
+    "rooms": [
+      "C205//",
+      "C204//"
+    ],
+    "slots": [
+      {
+        "room": "C205//",
+        "day": "MA",
+        "time": "18:00-20:00",
+        "subCategory": null
+      },
+      {
+        "room": "C205//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C204//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LS03": {
+    "totalSessions": 4,
+    "participants": 70,
+    "rooms": [
+      "C203//",
+      "C204//",
+      "S101//",
+      "S201//"
+    ],
+    "slots": [
+      {
+        "room": "C203//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C204//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S201//",
+        "day": "MA",
+        "time": "13:00-15:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LS08": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "C207//"
+    ],
+    "slots": [
+      {
+        "room": "C207//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C207//",
+        "day": "MA",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LS10": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "C207//"
+    ],
+    "slots": [
+      {
+        "room": "C207//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "C207//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LX10": {
+    "totalSessions": 1,
+    "participants": 16,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "room": "EXT1//",
+        "day": "MA",
+        "time": "14:30-15:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LXIT": {
+    "totalSessions": 1,
+    "participants": 16,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "room": "EXT1//",
+        "day": "MA",
+        "time": "14:00-14:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "LXLC": {
+    "totalSessions": 1,
+    "participants": 16,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "room": "EXT1//",
+        "day": "MA",
+        "time": "13:30-14:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "LXLS": {
+    "totalSessions": 2,
+    "participants": 10,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "room": "EXT1//",
+        "day": "MA",
+        "time": "13:00-13:30",
+        "subCategory": null
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      }
+    ]
+  },
+  "MA02": {
+    "totalSessions": 7,
+    "participants": 207,
+    "rooms": [
+      "A002//",
+      "S102//",
+      "S204//",
+      "B208//",
+      "D105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A002//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "MA",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "B208//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "D105//",
+        "day": "MA",
+        "time": "16:00-19:00"
+      },
+      {
+        "room": "D105//",
+        "day": "L",
+        "time": "16:00-19:00"
+      },
+      {
+        "room": "D105//",
+        "day": "ME",
+        "time": "13:00-16:00"
+      }
+    ]
+  },
+  "MA03": {
+    "totalSessions": 5,
+    "participants": 144,
+    "rooms": [
+      "C002//",
+      "P102//",
+      "D105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P102//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P102//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "D105//",
+        "day": "V",
+        "time": "13:00-16:00"
+      },
+      {
+        "room": "D105//",
+        "day": "MA",
+        "time": "13:00-16:00"
+      }
+    ]
+  },
+  "MA11": {
+    "totalSessions": 5,
+    "participants": 151,
+    "rooms": [
+      "B106//",
+      "S101//",
+      "J105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B106//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "J105//",
+        "day": "MA",
+        "time": "16:00-20:00"
+      },
+      {
+        "room": "J105//",
+        "day": "J",
+        "time": "14:00-18:00"
+      }
+    ]
+  },
+  "MA13": {
+    "totalSessions": 5,
+    "participants": 151,
+    "rooms": [
+      "B106//",
+      "S102//",
+      "P103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B106//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P103//",
+        "day": "V",
+        "time": "14:00-18:00"
+      },
+      {
+        "room": "P103//",
+        "day": "J",
+        "time": "14:00-18:00"
+      }
+    ]
+  },
+  "MATH02": {
+    "totalSessions": 7,
+    "participants": 249,
+    "rooms": [
+      "//",
+      "B210//",
+      "A208//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B210//",
+        "day": "MA",
+        "time": "13:00-14:00",
+        "subCategory": null
+      },
+      {
+        "room": "B210//",
+        "day": "V",
+        "time": "13:00-14:00",
+        "subCategory": null
+      },
+      {
+        "room": "B210//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "A208//",
+        "day": "ME",
+        "time": "10:00-12:00"
+      },
+      {
+        "room": "A208//",
+        "day": "MA",
+        "time": "16:00-18:00"
+      },
+      {
+        "room": "A208//",
+        "day": "J",
+        "time": "18:00-20:00"
+      }
+    ]
+  },
+  "MC01": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "P202//",
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P202//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "J",
+        "time": "13:00-16:00"
+      }
+    ]
+  },
+  "ME01": {
+    "totalSessions": 2,
+    "participants": 96,
+    "rooms": [
+      "C104//",
+      "C102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C104//",
+        "day": "MA",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C102//",
+        "day": "ME",
+        "time": "8:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "ME02": {
+    "totalSessions": 3,
+    "participants": 114,
+    "rooms": [
+      "B101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "V",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B101//",
+        "day": "V",
+        "time": "12:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B101//",
+        "day": "V",
+        "time": "16:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "ME05": {
+    "totalSessions": 2,
+    "participants": 126,
+    "rooms": [
+      "B101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "ME",
+        "time": "12:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B101//",
+        "day": "ME",
+        "time": "16:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "ME09": {
+    "totalSessions": 1,
+    "participants": 30,
+    "rooms": [
+      "C103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C103//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "ME10": {
+    "totalSessions": 3,
+    "participants": 96,
+    "rooms": [
+      "C102//",
+      "S103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C102//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MG06": {
+    "totalSessions": 1,
+    "participants": 24,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "J",
+        "time": "13:00-14:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MIC01": {
+    "totalSessions": 3,
+    "participants": 72,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "V",
+        "time": "12:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "V",
+        "time": "16:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MIC02": {
+    "totalSessions": 3,
+    "participants": 72,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "V",
+        "time": "12:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "V",
+        "time": "16:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MIC03": {
+    "totalSessions": 2,
+    "participants": 7,
+    "rooms": [
+      "A103//",
+      "P202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A103//",
+        "day": "L",
+        "time": "13:00-15:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "L",
+        "time": "13:00-15:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MIC04": {
+    "totalSessions": 3,
+    "participants": 72,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "V",
+        "time": "12:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "V",
+        "time": "16:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MIC05": {
+    "totalSessions": 3,
+    "participants": 72,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "V",
+        "time": "12:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "EXT1//",
+        "day": "V",
+        "time": "16:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MM01": {
+    "totalSessions": 5,
+    "participants": 131,
+    "rooms": [
+      "B101//",
+      "P204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "L",
+        "time": "13:00-14:00",
+        "subCategory": null
+      },
+      {
+        "room": "P204//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P204//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P204//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P204//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MM01T1": {
+    "totalSessions": 2,
+    "participants": 40,
+    "rooms": [
+      "P204//"
+    ],
+    "slots": [
+      {
+        "room": "P204//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P204//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MP04": {
+    "totalSessions": 2,
+    "participants": 56,
+    "rooms": [
+      "B105//",
+      "S204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B105//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MP05": {
+    "totalSessions": 2,
+    "participants": 39,
+    "rooms": [
+      "B103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B103//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B103//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MP06": {
+    "totalSessions": 2,
+    "participants": 54,
+    "rooms": [
+      "C105//",
+      "P102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C105//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P102//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MQ01": {
+    "totalSessions": 9,
+    "participants": 296,
+    "rooms": [
+      "C002//",
+      "S101//",
+      "P201//",
+      "J101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "MA",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "J101//",
+        "day": "L",
+        "time": "16:00-18:00"
+      },
+      {
+        "room": "J101//",
+        "day": "L",
+        "time": "10:00-12:00"
+      },
+      {
+        "room": "J101//",
+        "day": "ME",
+        "time": "8:00-10:00"
+      },
+      {
+        "room": "J101//",
+        "day": "V",
+        "time": "10:00-12:00"
+      }
+    ]
+  },
+  "MQ03": {
+    "totalSessions": 7,
+    "participants": 136,
+    "rooms": [
+      "B101//",
+      "P102//",
+      "A105//",
+      "A108//",
+      "J101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P102//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A108//",
+        "day": "J",
+        "time": "16:00-18:00"
+      },
+      {
+        "room": "J101//",
+        "day": "J",
+        "time": "16:00-18:00"
+      },
+      {
+        "room": "A108//",
+        "day": "J",
+        "time": "18:00-20:00"
+      },
+      {
+        "room": "J101//",
+        "day": "J",
+        "time": "18:00-20:00"
+      }
+    ]
+  },
+  "MQ07": {
+    "totalSessions": 7,
+    "participants": 216,
+    "rooms": [
+      "C001//",
+      "S104//",
+      "B103//",
+      "S203//",
+      "J002//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C001//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B103//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "J002//",
+        "day": "L",
+        "time": "13:00-16:00"
+      },
+      {
+        "room": "J002//",
+        "day": "ME",
+        "time": "16:00-19:00"
+      },
+      {
+        "room": "J002//",
+        "day": "L",
+        "time": "16:00-19:00"
+      }
+    ]
+  },
+  "MQ16": {
+    "totalSessions": 7,
+    "participants": 116,
+    "rooms": [
+      "S204//",
+      "S203//",
+      "D102//",
+      "A210//",
+      "A208//",
+      "J102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S204//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "ME",
+        "time": "13:00-16:00"
+      },
+      {
+        "room": "D102//",
+        "day": "ME",
+        "time": "13:00-16:00"
+      },
+      {
+        "room": "A210//",
+        "day": "ME",
+        "time": "13:00-16:00"
+      },
+      {
+        "room": "A208//",
+        "day": "ME",
+        "time": "13:00-16:00"
+      },
+      {
+        "room": "J102//",
+        "day": "V",
+        "time": "14:00-18:00"
+      },
+      {
+        "room": "J102//",
+        "day": "J",
+        "time": "8:00-12:00"
+      }
+    ]
+  },
+  "MQ21": {
+    "totalSessions": 7,
+    "participants": 100,
+    "rooms": [
+      "S104//",
+      "A102//",
+      "B209//",
+      "A201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S104//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A102//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B209//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B209//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A102//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A201//",
+        "day": "ME",
+        "time": "10:00-12:00"
+      },
+      {
+        "room": "A201//",
+        "day": "V",
+        "time": "14:00-16:00"
+      }
+    ]
+  },
+  "MQ3A": {
+    "totalSessions": 4,
+    "participants": 36,
+    "rooms": [
+      "B101//",
+      "A105//",
+      "A108//",
+      "J101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A108//",
+        "day": "J",
+        "time": "18:00-20:00"
+      },
+      {
+        "room": "J101//",
+        "day": "J",
+        "time": "18:00-20:00"
+      }
+    ]
+  },
+  "MRE01": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "P202//",
+      "B207//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P202//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B207//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MRPPROJ": {
+    "totalSessions": 3,
+    "participants": 72,
+    "rooms": [
+      "C103//",
+      "D101//",
+      "//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C103//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "D101//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "//",
+        "day": "ME",
+        "time": "18:00-20:00"
+      }
+    ]
+  },
+  "MS11": {
+    "totalSessions": 5,
+    "participants": 187,
+    "rooms": [
+      "A001//",
+      "B201//",
+      "B202//",
+      "D102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "D102//",
+        "day": "ME",
+        "time": "16:00-19:00"
+      },
+      {
+        "room": "D102//",
+        "day": "S",
+        "time": "9:00-12:00"
+      }
+    ]
+  },
+  "MS11T1": {
+    "totalSessions": 8,
+    "participants": 240,
+    "rooms": [
+      "A001//",
+      "B201//",
+      "B202//",
+      "D102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "D102//",
+        "day": "V",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D102//",
+        "day": "J",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D102//",
+        "day": "J",
+        "time": "16:00-19:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MT00": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "B202//",
+      "B203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B202//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MT01": {
+    "totalSessions": 3,
+    "participants": 72,
+    "rooms": [
+      "N101//",
+      "B201//",
+      "A207//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "N101//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "A207//",
+        "day": "MA",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MT01T1": {
+    "totalSessions": 21,
+    "participants": 912,
+    "rooms": [
+      "N101//",
+      "B202//",
+      "B204//",
+      "B201//",
+      "B203//",
+      "A205//",
+      "A207//",
+      "A206//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "N101//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "N101//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B204//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B204//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B204//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "A205//",
+        "day": "MA",
+        "time": "18:00-20:00"
+      },
+      {
+        "room": "A205//",
+        "day": "ME",
+        "time": "18:00-20:00"
+      },
+      {
+        "room": "A207//",
+        "day": "ME",
+        "time": "18:00-20:00"
+      },
+      {
+        "room": "A206//",
+        "day": "S",
+        "time": "8:00-10:00"
+      },
+      {
+        "room": "A205//",
+        "day": "S",
+        "time": "8:00-10:00"
+      },
+      {
+        "room": "A205//",
+        "day": "S",
+        "time": "10:00-12:00"
+      },
+      {
+        "room": "A206//",
+        "day": "S",
+        "time": "10:00-12:00"
+      }
+    ]
+  },
+  "MT02": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "A001//",
+      "P202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MT02T1": {
+    "totalSessions": 14,
+    "participants": 576,
+    "rooms": [
+      "N101//",
+      "A001//",
+      "P202//",
+      "B203//",
+      "B202//",
+      "B205//",
+      "B207//",
+      "B201//",
+      "B204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "N101//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "A001//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B205//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "B207//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B205//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B204//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B204//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "B205//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MT03": {
+    "totalSessions": 11,
+    "participants": 394,
+    "rooms": [
+      "A002//",
+      "S204//",
+      "M204//",
+      "S102//",
+      "P103//",
+      "P104//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A002//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "M204//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P103//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P104//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P103//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P104//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P104//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MT03A": {
+    "totalSessions": 3,
+    "participants": 98,
+    "rooms": [
+      "A002//",
+      "B208//",
+      "A212//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A002//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B208//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "A212//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MT11": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "C103//",
+      "A105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C103//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MT12": {
+    "totalSessions": 5,
+    "participants": 127,
+    "rooms": [
+      "S202//",
+      "P101//",
+      "A212//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S202//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S202//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A212//",
+        "day": "L",
+        "time": "16:00-18:00"
+      },
+      {
+        "room": "A212//",
+        "day": "L",
+        "time": "10:00-12:00"
+      }
+    ]
+  },
+  "MT13": {
+    "totalSessions": 3,
+    "participants": 72,
+    "rooms": [
+      "B205//",
+      "S101//",
+      "A205//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B205//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "A205//",
+        "day": "MA",
+        "time": "16:00-18:00"
+      }
+    ]
+  },
+  "MT14": {
+    "totalSessions": 5,
+    "participants": 208,
+    "rooms": [
+      "C001//",
+      "P201//",
+      "P202//",
+      "B103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C001//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B103//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "MTC01": {
+    "totalSessions": 1,
+    "participants": 35,
+    "rooms": [
+      "C103//"
+    ],
+    "slots": [
+      {
+        "room": "C103//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "NF02A": {
+    "totalSessions": 5,
+    "participants": 170,
+    "rooms": [
+      "C001//",
+      "B207//",
+      "B201//",
+      "D202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C001//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B207//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "L",
+        "time": "18:00-20:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "NF04": {
+    "totalSessions": 7,
+    "participants": 264,
+    "rooms": [
+      "A001//",
+      "B210//",
+      "B201//",
+      "A108//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B210//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A108//",
+        "day": "MA",
+        "time": "10:00-12:00"
+      },
+      {
+        "room": "A108//",
+        "day": "MA",
+        "time": "14:00-16:00"
+      },
+      {
+        "room": "A108//",
+        "day": "L",
+        "time": "16:00-18:00"
+      }
+    ]
+  },
+  "NF04T1": {
+    "totalSessions": 8,
+    "participants": 264,
+    "rooms": [
+      "A001//",
+      "B205//",
+      "C105//",
+      "B204//",
+      "B203//",
+      "A108//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B205//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "C105//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B204//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A108//",
+        "day": "J",
+        "time": "14:00-16:00"
+      },
+      {
+        "room": "A108//",
+        "day": "V",
+        "time": "10:00-12:00"
+      },
+      {
+        "room": "A108//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "NF06": {
+    "totalSessions": 5,
+    "participants": 196,
+    "rooms": [
+      "A001//",
+      "P203//",
+      "P104//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "L",
+        "time": "16:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "P104//",
+        "day": "MA",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "ME",
+        "time": "16:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "V",
+        "time": "16:00-19:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "NF16": {
+    "totalSessions": 13,
+    "participants": 451,
+    "rooms": [
+      "N101//",
+      "S103//",
+      "S101//",
+      "S104//",
+      "S202//",
+      "P201//",
+      "A210//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "N101//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S202//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A210//",
+        "day": "S",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A210//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "A210//",
+        "day": "L",
+        "time": "18:00-20:00",
+        "subCategory": null
+      },
+      {
+        "room": "A210//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "A210//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "A210//",
+        "day": "S",
+        "time": "8:00-10:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "NF19": {
+    "totalSessions": 4,
+    "participants": 96,
+    "rooms": [
+      "B105//",
+      "M102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B105//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "M102//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "M102//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "M102//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "NF21": {
+    "totalSessions": 3,
+    "participants": 96,
+    "rooms": [
+      "EXT1//",
+      "P101//",
+      "B105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B105//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "NM01": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "S201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S201//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S201//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "NOPH02": {
+    "totalSessions": 3,
+    "participants": 72,
+    "rooms": [
+      "C103//",
+      "D101//",
+      "//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C103//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "D101//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "//",
+        "day": "J",
+        "time": "16:00-20:00"
+      }
+    ]
+  },
+  "NR01": {
+    "totalSessions": 1,
+    "participants": 25,
+    "rooms": [
+      "P102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P102//",
+        "day": "V",
+        "time": "13:00-17:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "NT01": {
+    "totalSessions": 3,
+    "participants": 48,
+    "rooms": [
+      "S101//",
+      "D101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S101//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "D101//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      }
+    ]
+  },
+  "OB01": {
+    "totalSessions": 4,
+    "participants": 99,
+    "rooms": [
+      "C103//",
+      "P204//",
+      "P104//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C103//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P204//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P104//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P104//",
+        "day": "J",
+        "time": "15:00-19:00"
+      }
+    ]
+  },
+  "OP02": {
+    "totalSessions": 3,
+    "participants": 30,
+    "rooms": [
+      "D101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "D101//",
+        "day": "L",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "D101//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D101//",
+        "day": "ME",
+        "time": "8:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "OS01": {
+    "totalSessions": 2,
+    "participants": 50,
+    "rooms": [
+      "P202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P202//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "OS10": {
+    "totalSessions": 2,
+    "participants": 50,
+    "rooms": [
+      "A103//",
+      "B202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A103//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "OS11": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "P101//",
+      "B209//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P101//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B209//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "OS13": {
+    "totalSessions": 3,
+    "participants": 52,
+    "rooms": [
+      "B208//",
+      "B210//",
+      "A201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B208//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B210//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "A201//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "OS16": {
+    "totalSessions": 2,
+    "participants": 50,
+    "rooms": [
+      "P201//",
+      "P203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P201//",
+        "day": "MA",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "OS23": {
+    "totalSessions": 2,
+    "participants": 52,
+    "rooms": [
+      "S202//",
+      "S102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S202//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "PC00": {
+    "totalSessions": 4,
+    "participants": 84,
+    "rooms": [
+      "C102//",
+      "P201//",
+      "S103//",
+      "B007//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C102//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "B007//",
+        "day": "MA",
+        "time": "13:00-16:00"
+      }
+    ]
+  },
+  "PE": {
+    "totalSessions": 1,
+    "participants": 103,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "room": "EXT1//",
+        "day": "S",
+        "time": "18:00-18:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "PH15": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "P102//",
+      "B209//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P102//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B209//",
+        "day": "ME",
+        "time": "16:00-17:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "PHYS02": {
+    "totalSessions": 13,
+    "participants": 308,
+    "rooms": [
+      "EXT1//",
+      "P202//",
+      "J004//",
+      "P203//",
+      "P204//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "J004//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P204//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "J004//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "J004//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "J004//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "PHYS03": {
+    "totalSessions": 3,
+    "participants": 168,
+    "rooms": [
+      "A001//",
+      "A105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "PHYS11": {
+    "totalSessions": 5,
+    "participants": 244,
+    "rooms": [
+      "N101//",
+      "B204//",
+      "B205//",
+      "D201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "N101//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B204//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B205//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D201//",
+        "day": "V",
+        "time": "9:00-12:00"
+      },
+      {
+        "room": "D201//",
+        "day": "ME",
+        "time": "17:00-20:00"
+      }
+    ]
+  },
+  "PHYS11T1": {
+    "totalSessions": 11,
+    "participants": 384,
+    "rooms": [
+      "N101//",
+      "B205//",
+      "B201//",
+      "B203//",
+      "D201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "N101//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B205//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B203//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B205//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "B201//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D201//",
+        "day": "J",
+        "time": "16:00-19:00"
+      },
+      {
+        "room": "D201//",
+        "day": "L",
+        "time": "13:00-16:00"
+      },
+      {
+        "room": "D201//",
+        "day": "J",
+        "time": "13:00-16:00"
+      },
+      {
+        "room": "D201//",
+        "day": "V",
+        "time": "16:00-19:00"
+      },
+      {
+        "room": "D201//",
+        "day": "V",
+        "time": "13:00-16:00"
+      }
+    ]
+  },
+  "PHYS12": {
+    "totalSessions": 6,
+    "participants": 198,
+    "rooms": [
+      "C104//",
+      "B205//",
+      "B209//",
+      "D201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C104//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B205//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B209//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "D201//",
+        "day": "J",
+        "time": "9:00-12:00"
+      },
+      {
+        "room": "D201//",
+        "day": "ME",
+        "time": "14:00-17:00"
+      },
+      {
+        "room": "D201//",
+        "day": "MA",
+        "time": "14:00-17:00"
+      }
+    ]
+  },
+  "PIX": {
+    "totalSessions": 4,
+    "participants": 150,
+    "rooms": [
+      "C002//",
+      "P204//",
+      "P203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "J",
+        "time": "13:00-14:00",
+        "subCategory": null
+      },
+      {
+        "room": "P204//",
+        "day": "L",
+        "time": "18:00-20:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "MA",
+        "time": "18:00-20:00",
+        "subCategory": null
+      },
+      {
+        "room": "P204//",
+        "day": "ME",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "PO03": {
+    "totalSessions": 4,
+    "participants": 126,
+    "rooms": [
+      "C002//",
+      "S203//",
+      "B202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "L",
+        "time": "9:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "L",
+        "time": "13:00-14:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "MA",
+        "time": "18:00-19:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "PO03T1": {
+    "totalSessions": 3,
+    "participants": 60,
+    "rooms": [
+      "C002//",
+      "B202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "MA",
+        "time": "18:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      }
+    ]
+  },
+  "QO01": {
+    "totalSessions": 3,
+    "participants": 48,
+    "rooms": [
+      "S201//",
+      "D101//",
+      "D108//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S201//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D101//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "D108//",
+        "day": "ME",
+        "time": "13:00-16:00"
+      }
+    ]
+  },
+  "RE06": {
+    "totalSessions": 4,
+    "participants": 72,
+    "rooms": [
+      "S201//",
+      "S203//",
+      "D206//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S201//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "D206//",
+        "day": "J",
+        "time": "9:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "D206//",
+        "day": "J",
+        "time": "16:00-19:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "RE13": {
+    "totalSessions": 4,
+    "participants": 150,
+    "rooms": [
+      "C001//",
+      "S101//",
+      "D202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C001//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "MA",
+        "time": "13:00-16:00"
+      }
+    ]
+  },
+  "RE14": {
+    "totalSessions": 10,
+    "participants": 228,
+    "rooms": [
+      "C002//",
+      "S204//",
+      "S104//",
+      "D202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "L",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S204//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "MA",
+        "time": "16:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "ME",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "ME",
+        "time": "16:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "J",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "J",
+        "time": "16:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "V",
+        "time": "16:00-19:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "RE15": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "A103//",
+      "S101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A103//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "RE16": {
+    "totalSessions": 6,
+    "participants": 124,
+    "rooms": [
+      "C105//",
+      "P201//",
+      "S203//",
+      "D202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C105//",
+        "day": "V",
+        "time": "9:00-11:00",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "V",
+        "time": "11:00-13:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "J",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "L",
+        "time": "14:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "D202//",
+        "day": "ME",
+        "time": "8:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "RM02": {
+    "totalSessions": 3,
+    "participants": 20,
+    "rooms": [
+      "A103//",
+      "A212//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A103//",
+        "day": "J",
+        "time": "9:00-11:00",
+        "subCategory": null
+      },
+      {
+        "room": "A212//",
+        "day": "J",
+        "time": "11:00-13:00",
+        "subCategory": null
+      },
+      {
+        "room": "A103//",
+        "day": "J",
+        "time": "11:00-13:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "RO02": {
+    "totalSessions": 2,
+    "participants": 32,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "14:00-14:30",
+        "subCategory": null
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      }
+    ]
+  },
+  "SC00": {
+    "totalSessions": 3,
+    "participants": 93,
+    "rooms": [
+      "B101//",
+      "A105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "L",
+        "time": "16:00-17:30",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SC00T1": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "B101//",
+      "M207//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "L",
+        "time": "16:00-17:30",
+        "subCategory": null
+      },
+      {
+        "room": "M207//",
+        "day": "MA",
+        "time": "17:00-19:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SC04": {
+    "totalSessions": 4,
+    "participants": 144,
+    "rooms": [
+      "C102//",
+      "P101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C102//",
+        "day": "V",
+        "time": "9:00-10:30",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "V",
+        "time": "10:30-12:30",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SC06": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "S201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S201//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S201//",
+        "day": "L",
+        "time": "13:00-14:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SD11": {
+    "totalSessions": 1,
+    "participants": 133,
+    "rooms": [
+      "//"
+    ],
+    "slots": [
+      {
+        "room": "//",
+        "day": "S",
+        "time": "11:30-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SE01": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "S201//",
+      "B202//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S201//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "L",
+        "time": "16:00-17:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SG11": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "S203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S203//",
+        "day": "MA",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "MA",
+        "time": "12:00-14:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SG12": {
+    "totalSessions": 2,
+    "participants": 50,
+    "rooms": [
+      "C104//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C104//",
+        "day": "MA",
+        "time": "14:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C104//",
+        "day": "MA",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SG21": {
+    "totalSessions": 3,
+    "participants": 75,
+    "rooms": [
+      "B103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B103//",
+        "day": "ME",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B103//",
+        "day": "ME",
+        "time": "12:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B103//",
+        "day": "ME",
+        "time": "16:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SG22": {
+    "totalSessions": 3,
+    "participants": 75,
+    "rooms": [
+      "B103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B103//",
+        "day": "J",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B103//",
+        "day": "J",
+        "time": "12:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B103//",
+        "day": "J",
+        "time": "16:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SG31": {
+    "totalSessions": 2,
+    "participants": 45,
+    "rooms": [
+      "M208//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "M208//",
+        "day": "V",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "M208//",
+        "day": "V",
+        "time": "12:00-14:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SG32": {
+    "totalSessions": 2,
+    "participants": 50,
+    "rooms": [
+      "M208//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "M208//",
+        "day": "V",
+        "time": "14:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "M208//",
+        "day": "V",
+        "time": "18:00-20:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SI10": {
+    "totalSessions": 2,
+    "participants": 204,
+    "rooms": [
+      "N101//",
+      "P101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "N101//",
+        "day": "MA",
+        "time": "10:30-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SI10T1": {
+    "totalSessions": 9,
+    "participants": 360,
+    "rooms": [
+      "N101//",
+      "S201//",
+      "C207//",
+      "P101//",
+      "S104//",
+      "S101//",
+      "C105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "N101//",
+        "day": "MA",
+        "time": "10:30-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S201//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C207//",
+        "day": "V",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "C105//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C207//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SM06": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "B209//",
+      "S103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B209//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SO02": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "B207//",
+      "A105//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B207//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "L",
+        "time": "13:00-14:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SO05": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "S101//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S101//",
+        "day": "MA",
+        "time": "13:00-14:30",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "MA",
+        "time": "14:30-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SP01": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "S203//",
+      "SPOR//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S203//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "SPOR//",
+        "day": "MA",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SP03": {
+    "totalSessions": 1,
+    "participants": 2,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "room": "EXT1//",
+        "day": "S",
+        "time": "13:00-13:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "SP11": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "S103//",
+      "SPOR//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S103//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "SPOR//",
+        "day": "L",
+        "time": "16:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SPJE": {
+    "totalSessions": 1,
+    "participants": 500,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "room": "EXT1//",
+        "day": "J",
+        "time": "14:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SY01": {
+    "totalSessions": 11,
+    "participants": 384,
+    "rooms": [
+      "A002//",
+      "B202//",
+      "B208//",
+      "A203//",
+      "A201//",
+      "A205//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A002//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B208//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "B208//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "B208//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "A203//",
+        "day": "MA",
+        "time": "10:00-12:00"
+      },
+      {
+        "room": "A203//",
+        "day": "MA",
+        "time": "16:00-18:00"
+      },
+      {
+        "room": "A201//",
+        "day": "ME",
+        "time": "14:00-16:00"
+      },
+      {
+        "room": "A205//",
+        "day": "ME",
+        "time": "16:00-18:00"
+      },
+      {
+        "room": "A205//",
+        "day": "J",
+        "time": "16:00-18:00"
+      }
+    ]
+  },
+  "SY02": {
+    "totalSessions": 11,
+    "participants": 366,
+    "rooms": [
+      "A002//",
+      "M207//",
+      "S201//",
+      "S202//",
+      "A201//",
+      "P104//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A002//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "M207//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S201//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S202//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S201//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S201//",
+        "day": "V",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A201//",
+        "day": "J",
+        "time": "16:00-18:00"
+      },
+      {
+        "room": "A201//",
+        "day": "L",
+        "time": "16:00-18:00"
+      },
+      {
+        "room": "P104//",
+        "day": "MA",
+        "time": "18:00-20:00"
+      },
+      {
+        "room": "A201//",
+        "day": "L",
+        "time": "14:00-16:00"
+      },
+      {
+        "room": "A201//",
+        "day": "J",
+        "time": "14:00-16:00"
+      }
+    ]
+  },
+  "SY04": {
+    "totalSessions": 3,
+    "participants": 98,
+    "rooms": [
+      "B106//",
+      "P101//",
+      "S203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B106//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P101//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S203//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SY06": {
+    "totalSessions": 7,
+    "participants": 229,
+    "rooms": [
+      "C002//",
+      "S202//",
+      "S102//",
+      "P201//",
+      "A108//",
+      "A206//",
+      "A102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S202//",
+        "day": "MA",
+        "time": "8:00-9:30",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "MA",
+        "time": "13:00-14:30",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "J",
+        "time": "16:00-17:30",
+        "subCategory": null
+      },
+      {
+        "room": "A108//",
+        "day": "V",
+        "time": "16:00-20:00"
+      },
+      {
+        "room": "A206//",
+        "day": "MA",
+        "time": "15:00-19:00"
+      },
+      {
+        "room": "A102//",
+        "day": "L",
+        "time": "14:00-18:00"
+      }
+    ]
+  },
+  "SY12": {
+    "totalSessions": 5,
+    "participants": 138,
+    "rooms": [
+      "B101//",
+      "A105//",
+      "C105//",
+      "G002//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B101//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A105//",
+        "day": "MA",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "C105//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "G002//",
+        "day": "V",
+        "time": "16:00-20:00"
+      },
+      {
+        "room": "G002//",
+        "day": "J",
+        "time": "16:00-20:00"
+      }
+    ]
+  },
+  "SY14": {
+    "totalSessions": 3,
+    "participants": 92,
+    "rooms": [
+      "B105//",
+      "S201//",
+      "P201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B105//",
+        "day": "V",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S201//",
+        "day": "MA",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SY17": {
+    "totalSessions": 5,
+    "participants": 96,
+    "rooms": [
+      "S101//",
+      "S104//",
+      "A208//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S101//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "A208//",
+        "day": "MA",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A208//",
+        "day": "MA",
+        "time": "8:00-10:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SY23": {
+    "totalSessions": 3,
+    "participants": 36,
+    "rooms": [
+      "A103//",
+      "D206//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A103//",
+        "day": "V",
+        "time": "9:00-11:00",
+        "subCategory": null
+      },
+      {
+        "room": "A103//",
+        "day": "V",
+        "time": "11:00-13:00",
+        "subCategory": null
+      },
+      {
+        "room": "D206//",
+        "day": "MA",
+        "time": "13:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SY25": {
+    "totalSessions": 3,
+    "participants": 47,
+    "rooms": [
+      "P101//",
+      "S104//",
+      "D206//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "P101//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S104//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "D206//",
+        "day": "S",
+        "time": "8:00-10:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SY30": {
+    "totalSessions": 5,
+    "participants": 151,
+    "rooms": [
+      "B106//",
+      "S202//",
+      "S101//",
+      "A102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B106//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S202//",
+        "day": "J",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "S101//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "A102//",
+        "day": "MA",
+        "time": "16:00-19:00"
+      },
+      {
+        "room": "A102//",
+        "day": "J",
+        "time": "16:00-19:00"
+      }
+    ]
+  },
+  "SY31": {
+    "totalSessions": 7,
+    "participants": 203,
+    "rooms": [
+      "C102//",
+      "S202//",
+      "A206//",
+      "A210//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C102//",
+        "day": "ME",
+        "time": "14:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "S202//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S202//",
+        "day": "ME",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A206//",
+        "day": "V",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "A210//",
+        "day": "V",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "A206//",
+        "day": "V",
+        "time": "16:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "A210//",
+        "day": "V",
+        "time": "16:00-19:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SY34": {
+    "totalSessions": 1,
+    "participants": 32,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "14:30-15:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SY40": {
+    "totalSessions": 3,
+    "participants": 73,
+    "rooms": [
+      "M207//",
+      "S102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "M207//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "V",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SYE2": {
+    "totalSessions": 2,
+    "participants": 2,
+    "rooms": [
+      "A103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A103//",
+        "day": "V",
+        "time": "9:00-11:00",
+        "subCategory": null
+      },
+      {
+        "room": "A103//",
+        "day": "V",
+        "time": "11:00-13:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "SYE4": {
+    "totalSessions": 2,
+    "participants": 8,
+    "rooms": [
+      "M207//",
+      "S102//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "M207//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TI03F": {
+    "totalSessions": 1,
+    "participants": 32,
+    "rooms": [
+      "EXT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "EXT1//",
+        "day": "V",
+        "time": "15:00-15:30",
+        "subCategory": null
+      }
+    ]
+  },
+  "TN01": {
+    "totalSessions": 5,
+    "participants": 198,
+    "rooms": [
+      "C002//",
+      "S102//",
+      "B106//",
+      "A108//",
+      "P203//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "J",
+        "time": "8:00-9:30",
+        "subCategory": null
+      },
+      {
+        "room": "S102//",
+        "day": "L",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B106//",
+        "day": "MA",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "A108//",
+        "day": "ME",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "ME",
+        "time": "8:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TN01T1": {
+    "totalSessions": 7,
+    "participants": 144,
+    "rooms": [
+      "C002//",
+      "C105//",
+      "P203//",
+      "A108//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C002//",
+        "day": "J",
+        "time": "8:00-9:30",
+        "subCategory": null
+      },
+      {
+        "room": "C105//",
+        "day": "ME",
+        "time": "14:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "C105//",
+        "day": "ME",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "ME",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A108//",
+        "day": "ME",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "A108//",
+        "day": "S",
+        "time": "8:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "S",
+        "time": "8:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TN02": {
+    "totalSessions": 7,
+    "participants": 150,
+    "rooms": [
+      "A001//",
+      "P203//",
+      "B207//",
+      "P204//",
+      "B202//",
+      "P104//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "J",
+        "time": "8:00-9:30",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "J",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "B207//",
+        "day": "J",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P204//",
+        "day": "ME",
+        "time": "14:00-17:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "ME",
+        "time": "14:00-17:00",
+        "subCategory": null
+      },
+      {
+        "room": "B202//",
+        "day": "V",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P104//",
+        "day": "V",
+        "time": "13:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TN04": {
+    "totalSessions": 2,
+    "participants": 36,
+    "rooms": [
+      "J002//"
+    ],
+    "slots": [
+      {
+        "room": "J002//",
+        "day": "ME",
+        "time": "8:00-11:00",
+        "subCategory": null
+      },
+      {
+        "room": "J002//",
+        "day": "V",
+        "time": "8:00-11:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TN04T1": {
+    "totalSessions": 5,
+    "participants": 108,
+    "rooms": [
+      "J002//"
+    ],
+    "slots": [
+      {
+        "room": "J002//",
+        "day": "ME",
+        "time": "8:00-11:00",
+        "subCategory": null
+      },
+      {
+        "room": "J002//",
+        "day": "V",
+        "time": "8:00-11:00",
+        "subCategory": null
+      },
+      {
+        "room": "J002//",
+        "day": "MA",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "J002//",
+        "day": "J",
+        "time": "9:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "J002//",
+        "day": "ME",
+        "time": "13:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TN12": {
+    "totalSessions": 10,
+    "participants": 218,
+    "rooms": [
+      "N101//",
+      "P202//",
+      "P203//",
+      "P104//",
+      "P201//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "N101//",
+        "day": "ME",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "L",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "J",
+        "time": "16:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "ME",
+        "time": "17:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "MA",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "MA",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P104//",
+        "day": "V",
+        "time": "16:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "V",
+        "time": "16:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "V",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P202//",
+        "day": "V",
+        "time": "13:00-16:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TN14": {
+    "totalSessions": 5,
+    "participants": 177,
+    "rooms": [
+      "A001//",
+      "P103//",
+      "P203//",
+      "P104//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "A001//",
+        "day": "L",
+        "time": "8:00-9:30",
+        "subCategory": null
+      },
+      {
+        "room": "P103//",
+        "day": "L",
+        "time": "16:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "P203//",
+        "day": "L",
+        "time": "13:00-16:00",
+        "subCategory": null
+      },
+      {
+        "room": "P103//",
+        "day": "V",
+        "time": "10:00-13:00",
+        "subCategory": null
+      },
+      {
+        "room": "P104//",
+        "day": "MA",
+        "time": "9:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TN15": {
+    "totalSessions": 5,
+    "participants": 144,
+    "rooms": [
+      "B105//",
+      "P201//",
+      "C105//",
+      "IUT1//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "B105//",
+        "day": "ME",
+        "time": "10:00-11:30",
+        "subCategory": null
+      },
+      {
+        "room": "P201//",
+        "day": "L",
+        "time": "17:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "C105//",
+        "day": "MA",
+        "time": "17:00-19:00",
+        "subCategory": null
+      },
+      {
+        "room": "IUT1//",
+        "day": "ME",
+        "time": "14:00-18:00",
+        "subCategory": null
+      },
+      {
+        "room": "IUT1//",
+        "day": "J",
+        "time": "14:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TN19": {
+    "totalSessions": 1,
+    "participants": 24,
+    "rooms": [
+      "S103//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S103//",
+        "day": "ME",
+        "time": "8:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TNEV": {
+    "totalSessions": 1,
+    "participants": 24,
+    "rooms": [
+      "D002//"
+    ],
+    "slots": [
+      {
+        "room": "D002//",
+        "day": "V",
+        "time": "8:00-11:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TNEVT1": {
+    "totalSessions": 2,
+    "participants": 48,
+    "rooms": [
+      "D002//"
+    ],
+    "slots": [
+      {
+        "room": "D002//",
+        "day": "L",
+        "time": "9:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "D002//",
+        "day": "J",
+        "time": "9:00-12:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TPC01": {
+    "totalSessions": 3,
+    "participants": 62,
+    "rooms": [
+      "S103//",
+      "B005//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "S103//",
+        "day": "J",
+        "time": "8:00-10:00",
+        "subCategory": null
+      },
+      {
+        "room": "S103//",
+        "day": "J",
+        "time": "10:00-12:00",
+        "subCategory": null
+      },
+      {
+        "room": "B005//",
+        "day": "J",
+        "time": "14:00-18:00",
+        "subCategory": null
+      }
+    ]
+  },
+  "TS02": {
+    "totalSessions": 2,
+    "participants": 58,
+    "rooms": [
+      "C104//"
+    ],
+    "slots": [
+      {
+        "category": null,
+        "room": "C104//",
+        "day": "ME",
+        "time": "9:00-13:00",
+        "subCategory": null
+      },
+      {
+        "room": " ",
+        "day": " ",
+        "time": " "
+      }
+    ]
+  }
+}
