@@ -24,13 +24,12 @@ function processCruData(rootPath) {
                 totalSessions: 0,
                 participants: 0,
                 rooms: new Set(),
-                slots: []
+                cours: []
             };
         }
 
         summary[name].totalSessions += sessions.length;
         sessions.forEach(session => {
-            console.log(session);
             if (session.P) {
                 summary[name].participants += parseInt(session.P, 10);
             }
@@ -38,14 +37,14 @@ function processCruData(rootPath) {
             time = ' ';
             day = ' ';
             if (session.S) {
-                summary[name].rooms.add(session.S);
-                room = session.S;
+                summary[name].rooms.add(session.S.slice(0, -2));
+                room = session.S.slice(0, -2);
             }
             if (session.S) {
                 day = session.H.split(' ')[0];
                 time = session.H.split(' ')[1];
             }
-            summary[name].slots.push({
+            summary[name].cours.push({
                 category: session.C1,
                 room : room,
                 day: day,

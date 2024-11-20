@@ -8,14 +8,14 @@ const path = require('path');
  */
 function parseCruFile(filePath) {
     const content = fs.readFileSync(filePath, 'utf-8');
-    const lines = content.split('\n');
+    const lines = content.split('\n').slice(8);
     const data = [];
 
     let currentCourse = null;
 
     lines.forEach(line => {
         line = line.trim();
-        if (!line) return;
+        if (!line || line.includes('sec')) return;
 
         if (line.startsWith('+')) {
             currentCourse = {
@@ -29,13 +29,22 @@ function parseCruFile(filePath) {
 
             parts.forEach(part => {
                 const [key, value] = part.split('=');
-                session[key.trim()] = value ? value.trim() : null;
+                if (value == null) {
+                    if (key.includes('F')) {
+                        session["SubCategory"] = key.trim();
+                    } else if (['C', 'D', 'T'].some(char => key.includes(char))) {
+                        session["Category"] = key.trim();
+                    } else {
+                        session[key.trim()] = value ? value.trim() : null;
+                    }
+                } else {
+                    session[key.trim()] = value ? value.trim() : null;
+                }
             });
 
             currentCourse.sessions.push(session);
         }
     });
-
     return data;
 }
 
