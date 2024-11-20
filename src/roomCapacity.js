@@ -2,6 +2,7 @@
 const { processCruData } = require('./controller');
 const readline = require('readline');
 const path = require('path');
+const colors = require('colors');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -26,9 +27,9 @@ function getRoomCapacity(roomNumber) {
     }
 
     if (!roomFound) {
-        console.log("La salle est introuvable. Veuillez vérifier le numéro de la salle.");
+        console.log("La salle est introuvable. Veuillez vérifier le numéro de la salle.".red);
     } else {
-        console.log(`La salle ${roomNumber} peut accueillir jusqu'à ${maxCapacity} personnes.`);
+        console.log(`La salle ` + `${roomNumber}`.grey + ` peut accueillir jusqu'à ` + `${maxCapacity}`.green + ` personnes.`);
     }
 }
 
@@ -39,5 +40,5 @@ function promptRoomNumber() {
     });
 }
 
-console.log("Capacité maximale des salles");
+console.log("Capacité maximale des salles".inverse);
 promptRoomNumber();
