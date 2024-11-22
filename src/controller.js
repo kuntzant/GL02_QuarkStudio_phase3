@@ -44,12 +44,12 @@ function processCruData(rootPath) {
                 time = session.H.split(' ')[1];
             }
             summary[name].cours.push({
-                category: session.C1,
+                category: session["Category"],
                 room : room,
                 participants : participants,
                 day: day,
                 time: time,
-                subCategory: session.F1
+                subCategory: session["SubCategory"]
             });
         });
     });
