@@ -34,7 +34,7 @@ function getRoomCapacity(roomNumber) {
 }
 
 function promptRoomNumber() {
-    rl.question("Veuillez entrer le numéro de la salle : ", (roomNumber.cyan).cyan => {
+    rl.question("Veuillez entrer le numéro de la salle : ", (roomNumber) => {
         getRoomCapacity(roomNumber.toUpperCase());
         rl.close();
     });
