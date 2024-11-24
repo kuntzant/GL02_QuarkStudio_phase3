@@ -4058,18 +4058,18 @@
   "MATH02": {
     "totalSessions": 7,
     "rooms": [
-      "",
+      "A002",
       "B210",
       "A208"
     ],
     "cours": [
       {
         "category": "C1",
-        "room": "",
+        "room": "A002",
         "participants": 96,
         "day": "L",
         "time": "14:00-16:00",
-        "subCategory": "F"
+        "subCategory": "F1"
       },
       {
         "category": "D1",
