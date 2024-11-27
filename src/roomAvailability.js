@@ -31,7 +31,7 @@ function getRoomAvailability(roomNumber) {
     } else if (availability.length === 0) {
         console.log("La salle demandée n'est jamais libre.".yellow);
     } else {
-        console.log("Disponibilités de la salle " + roomNumber.brightCyan + " :");
+        console.log("Disponibilités de la salle " + roomNumber.brightMagenta + " :");
         console.log(availability.join('\n').brightMagenta);
     }
 }
