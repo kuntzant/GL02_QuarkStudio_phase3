@@ -70,9 +70,9 @@ function displayConflicts(conflicts) {
     } else {
         console.log("Conflits détectés :".red);
         conflicts.forEach(({room, day, conflict }) => {
-            console.log(`Conflit dans la salle ${room} le ${day} :`);
+            console.log(`Conflit dans la salle ${room.brightCyan} le ${day} :`);
             conflict.forEach(({ time, course }) => {
-                console.log(` - ${course} à ${time}`.green);
+                console.log(` - ${course.cyan} à ${time.brightMagenta}`);
             });
         });
     }

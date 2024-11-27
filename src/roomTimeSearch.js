@@ -48,8 +48,8 @@ function getAvailableRooms(day, timeRange) {
         console.log("Aucune salle n'est libre lors de la période demandée.".yellow);
     } else {
         const sortedRooms = Array.from(availableRooms).sort(); // c'est pour trier les salles par ordre alphabétique
-        console.log("Salles disponibles le " + day.brightMagenta + " de " + timeRange.brightMagenta + " :");
-        console.log(sortedRooms.join('\n').brightMagenta);
+        console.log("Salles disponibles le " + day.grey + " de " + timeRange.brightMagenta + " :");
+        console.log(sortedRooms.join('\n').brightCyan);
     }
 }
 

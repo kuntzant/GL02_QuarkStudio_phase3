@@ -21,7 +21,7 @@ function parseTimeRange(timeRange) {
 
 function getRoomAvailability(roomNumber) {
     const openingTime = parseTimeRange("08:00-18:00"); 
-    //on collecte quand la salle en question est occupé 
+    // On collecte quand la salle en question est occupé 
     const occupiedSlots = {};
 
     for (const courseName in summary) {
@@ -38,7 +38,7 @@ function getRoomAvailability(roomNumber) {
         });
     }
 
-    //on soustrait les créneaux occupés au créneaux d'ouverture
+    // On soustrait les créneaux occupés au créneaux d'ouverture
     const availability = {};
 
     for (const day in occupiedSlots) {
@@ -64,21 +64,24 @@ function getRoomAvailability(roomNumber) {
         availability[day] = freeSlots;
     }
 
+    const weekOrder = ['L', 'MA', 'ME', 'J', 'V', 'S'];
 
-    //affichage en mode MA: 08:00-10:00, 12:00-14:00
+    // Affichage en mode MA: 08:00-10:00, 12:00-14:00
     if (Object.keys(availability).length === 0) {
         console.log("La salle est introuvable ou n'a aucune disponibilité.".red);
     } else {
-        console.log("Disponibilités de la salle " + roomNumber.brightMagenta + " :");
-        for (const day in availability) {
+        console.log("Disponibilités de la salle " + roomNumber.brightCyan + " :");
+        for (const day of weekOrder) {     // Pour parcourir dans l'ordre de la semaine
+            if (availability[day]) { 
             const slots = availability[day].map(slot => {
                 const startHours = String(Math.floor(slot.start / 60)).padStart(2, '0');
                 const startMinutes = String(slot.start % 60).padStart(2, '0');
                 const endHours = String(Math.floor(slot.end / 60)).padStart(2, '0');
                 const endMinutes = String(slot.end % 60).padStart(2, '0');
-                return `${startHours}:${startMinutes}-${endHours}:${endMinutes}`;
+                return `${startHours}:${startMinutes}-${endHours}:${endMinutes}`.magenta;
             });
-            console.log(`${day}: ${slots.join(', ')}`.brightMagenta);
+            console.log(`${day.gray}: ${slots.join(', ')}`);
+            }
         }
     }
 }
