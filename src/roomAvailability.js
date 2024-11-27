@@ -20,7 +20,8 @@ function parseTimeRange(timeRange) {
 }
 
 function getRoomAvailability(roomNumber) {
-    const openingTime = parseTimeRange("08:00-18:00"); // Horaires d'ouverture de l'établissement
+    const openingTime = parseTimeRange("08:00-18:00"); 
+    //on collecte quand la salle en question est occupé 
     const occupiedSlots = {};
 
     for (const courseName in summary) {
@@ -37,6 +38,7 @@ function getRoomAvailability(roomNumber) {
         });
     }
 
+    //on soustrait les créneaux occupés au créneaux d'ouverture
     const availability = {};
 
     for (const day in occupiedSlots) {
@@ -62,6 +64,8 @@ function getRoomAvailability(roomNumber) {
         availability[day] = freeSlots;
     }
 
+
+    //affichage en mode MA: 08:00-10:00, 12:00-14:00
     if (Object.keys(availability).length === 0) {
         console.log("La salle est introuvable ou n'a aucune disponibilité.".red);
     } else {
