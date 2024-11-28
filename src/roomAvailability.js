@@ -3,10 +3,6 @@ const readline = require('readline');
 const path = require('path');
 const colors = require('colors');
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
 
 const rootPath = path.resolve(__dirname, '../data'); 
 const summary = processCruData(rootPath);
@@ -20,7 +16,7 @@ function parseTimeRange(timeRange) {
 }
 
 function getRoomAvailability(roomNumber) {
-    const openingTime = parseTimeRange("08:00-18:00"); 
+    const openingTime = parseTimeRange("08:00-20:00"); 
     // On collecte quand la salle en question est occupé 
     const occupiedSlots = {};
 
@@ -64,7 +60,16 @@ function getRoomAvailability(roomNumber) {
         availability[day] = freeSlots;
     }
 
-    const weekOrder = ['L', 'MA', 'ME', 'J', 'V', 'S'];
+    const weekOrder = ['L', 'MA', 'ME', 'J', 'V', 'S', 'D'];
+    const letterForDay = {
+        "L": "Lundi",
+        "MA": "Mardi",
+        "ME": "Mercredi",
+        "J": "Jeudi",
+        "V": "Vendredi",
+        "S": "Samedi",
+        "D": "Dimanche"
+    };
 
     // Affichage en mode MA: 08:00-10:00, 12:00-14:00
     if (Object.keys(availability).length === 0) {
@@ -80,18 +85,26 @@ function getRoomAvailability(roomNumber) {
                 const endMinutes = String(slot.end % 60).padStart(2, '0');
                 return `${startHours}:${startMinutes}-${endHours}:${endMinutes}`.magenta;
             });
-            console.log(`${day.gray}: ${slots.join(', ')}`);
+            console.log(`${letterForDay[day].brightYellow}: ${slots.join(', ')}`);
             }
         }
     }
 }
 
-function promptRoomAvailability() {
-    rl.question("Veuillez entrer le numéro de la salle : ", (roomNumber) => {
-        getRoomAvailability(roomNumber.toUpperCase());
-        rl.close();
+async function promptRoomAvailability(rl) {
+    console.log("Disponibilités des salles".inverse);
+    const roomNumber = await promptUser("Veuillez entrer le numéro de la salle : ", rl);
+    getRoomAvailability(roomNumber.toUpperCase());
+        
+}
+
+function promptUser(question, rl) {
+    return new Promise(resolve => {
+        rl.question(question, (answer) => {
+            resolve(answer);  // Résoudre la promesse après la réponse de l'utilisateur
+        });
     });
 }
 
-console.log("Disponibilités des salles".inverse);
-promptRoomAvailability();
+
+module.exports = { promptRoomAvailability };

@@ -4,10 +4,6 @@ const readline = require('readline');
 const path = require('path');
 const colors = require('colors');
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
 
 const rootPath = path.resolve(__dirname, '../data'); // Dossier contenant les sous-dossiers .cru
 const summary = processCruData(rootPath);
@@ -27,12 +23,19 @@ function searchRoomsForCourse(courseCode) {
     }
 }
 
-function promptCourseCode() {
-    rl.question("Veuillez entrer le code du cours : ", (courseCode) => {
-        searchRoomsForCourse(courseCode.toUpperCase());
-        rl.close();
+async function promptCourseCode(rl) {
+    console.log("Recherche des salles associées à un cours".inverse);
+    const courseCode = await promptUser("Veuillez entrer le code du cours : ", rl);
+    searchRoomsForCourse(courseCode.toUpperCase());
+
+}
+
+function promptUser(question, rl) {
+    return new Promise(resolve => {
+        rl.question(question, (answer) => {
+            resolve(answer);  // Résoudre la promesse après la réponse de l'utilisateur
+        });
     });
 }
 
-console.log("Recherche des salles associées à un cours".inverse);
-promptCourseCode();
+module.exports = { promptCourseCode };

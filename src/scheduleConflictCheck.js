@@ -26,7 +26,7 @@ function detectConflicts(data) {
 
             // Ignorer les sessions avec des données manquantes (genre SD11 qui a pas de salle)
             if (!room || !day || !time) { 
-                console.warn("Session mal formattée:", courseName, session);
+                console.warn("Session mal formattée:".yellow + '\n', courseName.cyan, session);
                 return; 
             }
 
@@ -65,12 +65,23 @@ function detectConflicts(data) {
 }
 
 function displayConflicts(conflicts) {
+
+    const letterForDay = {
+        "L": "Lundi",
+        "MA": "Mardi",
+        "ME": "Mercredi",
+        "J": "Jeudi",
+        "V": "Vendredi",
+        "S": "Samedi",
+        "D": "Dimanche"
+    };
+
     if (conflicts.length === 0) {
         console.log("Aucun conflit détecté.".green);
     } else {
         console.log("Conflits détectés :".red);
         conflicts.forEach(({room, day, conflict }) => {
-            console.log(`Conflit dans la salle ${room.brightCyan} le ${day} :`);
+            console.log(`Conflit dans la salle ${room.brightCyan} le ${letterForDay[day].brightYellow} :`);
             conflict.forEach(({ time, course }) => {
                 console.log(` - ${course.cyan} à ${time.brightMagenta}`);
             });
