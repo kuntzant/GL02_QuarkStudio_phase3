@@ -1,4 +1,4 @@
-// SPEC2
+// SPEC 2
 const { processCruData } = require('./controller');
 const readline = require('readline');
 const path = require('path');
