@@ -1,5 +1,6 @@
 //SPEC 6
 const { processCruData } = require('./controller');
+const readline = require('readline');
 const path = require('path');
 const colors = require('colors');
 
@@ -65,8 +66,9 @@ function detectConflicts(data) {
     return conflicts;
 }
 
-function displayConflicts(conflicts) {
-
+async function promptScheduleConflictCheck(rl) {
+    console.log("Vérification des conflits d'emploi du temps".inverse);
+    const conflicts = detectConflicts(summary);
     const letterForDay = {
         "L": "Lundi",
         "MA": "Mardi",
@@ -81,16 +83,14 @@ function displayConflicts(conflicts) {
         console.log("Aucun conflit détecté.".green);
     } else {
         console.log("Conflits détectés :".red);
-        conflicts.forEach(({room, day, conflict }) => {
+        conflicts.forEach(({ room, day, conflict }) => {
             console.log(`Conflit dans la salle ${room.brightCyan} le ${letterForDay[day].brightYellow} :`);
             conflict.forEach(({ time, course }) => {
                 console.log(` - ${course.cyan} à ${time.brightMagenta}`);
             });
         });
     }
-    return;
 }
 
-const conflicts = detectConflicts(summary);
-displayConflicts(conflicts);
+module.exports = { promptScheduleConflictCheck };
 

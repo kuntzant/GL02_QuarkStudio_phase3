@@ -3,7 +3,8 @@ const { promptCourseCode } = require('./roomSearch');
 const { promptRoomNumber } = require('./roomCapacity');
 const { promptRoomAvailability } = require('./roomAvailability');
 const { promptAvailableRooms } = require('./roomTimeAvailability');
-// const { ... } = require('./scheduleConflictCheck');      jsp comment import le fichier vu que la fonction a une entrée
+const { promptICalExport } = require('./ICalExport');
+const { promptScheduleConflictCheck } = require('./scheduleConflictCheck');
 const { promptRoomOccupancy } = require('./roomOccupancyRate');
 
 const rl = readline.createInterface({
@@ -51,10 +52,10 @@ async function handleMenuChoice(choice) {
             await promptAvailableRooms(rl);
             break;
         case '5':
-            console.log("Cette fonctionnalité n'est pas encore disponible.".yellow);
+            await promptICalExport(rl);
             break;
         case '6':
-            console.log("Cette fonctionnalité n'est pas encore disponible.".yellow);
+            await promptScheduleConflictCheck(rl);
             break;
         case '7':
             await promptRoomOccupancy(rl); 
