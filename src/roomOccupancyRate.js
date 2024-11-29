@@ -4,9 +4,11 @@ const readline = require('readline');
 const path = require('path');
 const colors = require('colors');
 
+// Chemin racine des données et ajout des données CRU
 const rootPath = path.resolve(__dirname, '../data');
 const summary = processCruData(rootPath);
 
+// Fonction pour analyser une plage horaire
 function parseTimeRange(timeRange) {
     const [start, end] = timeRange.split('-').map(time => {
         const [hours, minutes] = time.split(':').map(Number);
@@ -15,6 +17,7 @@ function parseTimeRange(timeRange) {
     return { start, end };
 }
 
+// Fonction pour calculer le taux d'occupation pour toutes les salles
 function calculateOccupancyRateForAllRooms() {
     const roomOccupancy = {};
 
@@ -47,7 +50,7 @@ function calculateOccupancyRateForAllRooms() {
     const totalTimePerDay = openingTime.end - openingTime.start;
     const weekOrder = ['L', 'MA', 'ME', 'J', 'V', 'S', 'D'];
 
-    const occupancyRates = []; // Tableau pour stocker les taux d'occupation avec la salle
+    const occupancyRates = []; 
 
     for (const room in roomOccupancy) {
         let totalOccupiedTime = 0;
@@ -64,38 +67,35 @@ function calculateOccupancyRateForAllRooms() {
 
         // Calcul du taux d'occupation : (temps occupé / temps total) * 100
         const occupancyRate = ((totalOccupiedTime) / (totalTimePerDay * weekOrder.length)) * 100;
-        
-        // Ajout du taux d'occupation avec le nom de la salle
+
         occupancyRates.push({ room, occupancyRate });
     }
 
-    // Tri des salles par taux d'occupation décroissant
+    // Tri par taux d'occupation décroissant
     occupancyRates.sort((a, b) => b.occupancyRate - a.occupancyRate);
 
-    // Affichage des taux d'occupation triés
     console.log("Taux d'occupation des salles trié par ordre décroissant :".inverse);
     occupancyRates.forEach(({ room, occupancyRate }) => {
         if (room.trim() !== "") {console.log("Salle " + room.brightCyan + ": " + occupancyRate.toFixed(2).toString().brightGreen + "%".green);}
     });
-
-
 }
 
+// Fonction pour demander à l'utilisateur s'il souhaite calculer le taux d'occupation des salles
 async function promptRoomOccupancy(rl) {
     console.log("Calcul du taux d'occupation des salles".inverse);
     const answer = await promptUser("Souhaitez-vous calculer le taux d'occupation pour toutes les salles ("+ "O".green+ "/"+ "N".red+") ? ", rl);
     if (answer.toUpperCase() === 'O') {
-        calculateOccupancyRateForAllRooms(); // Calcul du taux d'occupation pour toutes les salles
+        calculateOccupancyRateForAllRooms(); 
     } else {
         console.log("Opération annulée.".yellow);
     }
-
 }
 
+// Fonction pour poser une question à l'utilisateur et attendre sa réponse
 function promptUser(question, rl) {
     return new Promise(resolve => {
         rl.question(question, (answer) => {
-            resolve(answer);  // Résoudre la promesse après la réponse de l'utilisateur
+            resolve(answer); 
         });
     });
 }

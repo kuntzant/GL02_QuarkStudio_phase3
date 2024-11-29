@@ -17,6 +17,7 @@ function parseTimeRange(timeRange) {
     return { start, end };
 }
 
+// Détecte les conflits d'emploi du temps
 function detectConflicts(data) {
     const conflicts = [];
     const roomSchedules = {};
@@ -35,7 +36,7 @@ function detectConflicts(data) {
             // Convertis les horaires en minutes
             const { start, end } = parseTimeRange(time);
             
-             // Initialise les structures nécessaires pour la salle et le jour
+            // Initialise les structures nécessaires pour la salle et le jour
             if (!roomSchedules[room]) {
                 roomSchedules[room] = {}; // Initialise pour une nouvelle salle
             }
@@ -66,6 +67,7 @@ function detectConflicts(data) {
     return conflicts;
 }
 
+// Fonction pour vérifier les conflits d'emploi du temps et afficher les résultats
 async function promptScheduleConflictCheck(rl) {
     console.log("Vérification des conflits d'emploi du temps".inverse);
     const conflicts = detectConflicts(summary);
@@ -93,4 +95,3 @@ async function promptScheduleConflictCheck(rl) {
 }
 
 module.exports = { promptScheduleConflictCheck };
-

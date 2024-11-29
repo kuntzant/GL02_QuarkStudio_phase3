@@ -4,10 +4,11 @@ const readline = require('readline');
 const path = require('path');
 const colors = require('colors');
 
-
+// Chemin racine des données et ajout des données CRU
 const rootPath = path.resolve(__dirname, '../data'); 
 const summary = processCruData(rootPath);
 
+// Fonction pour analyser une plage horaire
 function parseTimeRange(timeRange) {
     const [start, end] = timeRange.split('-').map(time => {
         const [hours, minutes] = time.split(':').map(Number);
@@ -16,11 +17,13 @@ function parseTimeRange(timeRange) {
     return { start, end };
 }
 
+// Fonction pour obtenir la disponibilité d'une salle
 function getRoomAvailability(roomNumber) {
     const openingTime = parseTimeRange("08:00-20:00"); 
-    // On collecte quand la salle en question est occupé 
+    // On collecte quand la salle en question est occupée 
     const occupiedSlots = {};
 
+    // Parcourir les cours pour trouver les créneaux occupés
     for (const courseName in summary) {
         const course = summary[courseName];
         course.cours.forEach(session => {
@@ -35,9 +38,10 @@ function getRoomAvailability(roomNumber) {
         });
     }
 
-    // On soustrait les créneaux occupés au créneaux d'ouverture
+    // On soustrait les créneaux occupés aux créneaux d'ouverture
     const availability = {};
 
+    // Calculer les créneaux libres pour chaque jour
     for (const day in occupiedSlots) {
         let freeSlots = [{ start: openingTime.start, end: openingTime.end }];
         occupiedSlots[day].forEach(occupied => {
@@ -62,7 +66,7 @@ function getRoomAvailability(roomNumber) {
     }
 
     const weekOrder = ['L', 'MA', 'ME', 'J', 'V', 'S', 'D'];
-    const letterForDay = {
+    const letterForDay = { // Pour l'affichage
         "L": "Lundi",
         "MA": "Mardi",
         "ME": "Mercredi",
@@ -72,40 +76,40 @@ function getRoomAvailability(roomNumber) {
         "D": "Dimanche"
     };
 
-    // Affichage en mode MA: 08:00-10:00, 12:00-14:00
+    
     if (Object.keys(availability).length === 0) {
         console.log("La salle est introuvable ou n'a aucune disponibilité.".red);
     } else {
         console.log("Disponibilités de la salle " + roomNumber.brightCyan + " :");
         for (const day of weekOrder) {     // Pour parcourir dans l'ordre de la semaine
             if (availability[day]) { 
-            const slots = availability[day].map(slot => {
-                const startHours = String(Math.floor(slot.start / 60)).padStart(2, '0');
-                const startMinutes = String(slot.start % 60).padStart(2, '0');
-                const endHours = String(Math.floor(slot.end / 60)).padStart(2, '0');
-                const endMinutes = String(slot.end % 60).padStart(2, '0');
-                return `${startHours}:${startMinutes}-${endHours}:${endMinutes}`.magenta;
-            });
-            console.log(`${letterForDay[day].brightYellow}: ${slots.join(', ')}`);
+                const slots = availability[day].map(slot => {
+                    const startHours = String(Math.floor(slot.start / 60)).padStart(2, '0');
+                    const startMinutes = String(slot.start % 60).padStart(2, '0');
+                    const endHours = String(Math.floor(slot.end / 60)).padStart(2, '0');
+                    const endMinutes = String(slot.end % 60).padStart(2, '0');
+                    return `${startHours}:${startMinutes}-${endHours}:${endMinutes}`.magenta;
+                });
+                console.log(`${letterForDay[day].brightYellow}: ${slots.join(', ')}`); // Affichage du style Mardi: 08:00-10:00, 12:00-14:00
             }
         }
     }
 }
 
+// Fonction pour demander la disponibilité d'une salle à l'utilisateur
 async function promptRoomAvailability(rl) {
     console.log("Disponibilités des salles".inverse);
     const roomNumber = await promptUser("Veuillez entrer le numéro de la salle : ", rl);
     getRoomAvailability(roomNumber.toUpperCase());
-        
 }
 
+// Fonction pour demander une entrée utilisateur
 function promptUser(question, rl) {
     return new Promise(resolve => {
         rl.question(question, (answer) => {
-            resolve(answer);  // Résoudre la promesse après la réponse de l'utilisateur
+            resolve(answer);  
         });
     });
 }
-
 
 module.exports = { promptRoomAvailability };

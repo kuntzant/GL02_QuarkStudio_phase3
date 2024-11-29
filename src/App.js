@@ -1,3 +1,4 @@
+// Fichier principale du projet (Menu de l'application)
 const readline = require('readline');
 const { promptCourseCode } = require('./roomSearch');
 const { promptRoomNumber } = require('./roomCapacity');
@@ -7,6 +8,7 @@ const { promptICalExport } = require('./ICalExport');
 const { promptScheduleConflictCheck } = require('./scheduleConflictCheck');
 const { promptRoomOccupancy } = require('./roomOccupancyRate');
 
+// Interface d'input unique à tous les fichiers pour éviter les erreurs de duplications de caractères
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout

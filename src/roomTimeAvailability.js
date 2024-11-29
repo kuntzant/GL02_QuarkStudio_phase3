@@ -1,13 +1,14 @@
-//SPEC 4
+// SPEC4
 const { processCruData } = require('./controller');
 const readline = require('readline');
 const path = require('path');
 const colors = require('colors');
 
-
+// Chemin racine des données et ajout des données CRU
 const rootPath = path.resolve(__dirname, '../data'); 
 const summary = processCruData(rootPath);
 
+// Fonction pour analyser une plage horaire
 function parseTimeRange(timeRange) {
     const [start, end] = timeRange.split('-').map(time => {
         const [hours, minutes] = time.split(':').map(Number);
@@ -16,6 +17,7 @@ function parseTimeRange(timeRange) {
     return { start, end };
 }
 
+// Fonction pour obtenir les salles disponibles pour un jour et une plage horaire donnés
 function getAvailableRooms(day, timeRange) {
     const { start, end } = parseTimeRange(timeRange);
     const availableRooms = new Set();
@@ -51,19 +53,20 @@ function getAvailableRooms(day, timeRange) {
         });
     }
 
+    // Si aucune salle n'est libre
     if (availableRooms.size === 0) {
         console.log("Aucune salle n'est libre lors de la période demandée.".yellow);
     } else {
-        const sortedRooms = Array.from(availableRooms).sort(); // c'est pour trier les salles par ordre alphabétique
+        const sortedRooms = Array.from(availableRooms).sort(); // Trier les salles par ordre alphabétique
         // Grouper les salles par leur premier caractère
         const groupedRooms = {};
         for (const room of sortedRooms) {
             if (room.trim()!=="") {
-            const firstChar = room[0].toUpperCase(); // Utiliser le premier caractère (majuscule pour uniformité)
-            if (!groupedRooms[firstChar]) {
-                groupedRooms[firstChar] = [];
-            }
-            groupedRooms[firstChar].push(room);
+                const firstChar = room[0].toUpperCase();
+                if (!groupedRooms[firstChar]) {
+                    groupedRooms[firstChar] = [];
+                }
+                groupedRooms[firstChar].push(room);
             }
         }
 
@@ -74,9 +77,9 @@ function getAvailableRooms(day, timeRange) {
             console.log(`${firstChar.grey}: ${rooms.join(', ').brightCyan}`);
         }
     }
-
 }
 
+// Fonction pour demander à l'utilisateur les informations nécessaires et afficher les salles disponibles
 async function promptAvailableRooms(rl) {
     console.log("Salles libres pour un créneau donné".inverse);
     const day = await promptUser("Veuillez entrer le jour de la semaine (L,MA,ME,J,V,S,D) : ", rl);
@@ -94,13 +97,13 @@ async function promptAvailableRooms(rl) {
     }
 
     getAvailableRooms(day.toUpperCase(), timeRange);          
-
 }
 
+// Fonction pour demander une entrée utilisateur
 function promptUser(question, rl) {
     return new Promise(resolve => {
         rl.question(question, (answer) => {
-            resolve(answer);  // Résoudre la promesse après la réponse de l'utilisateur
+            resolve(answer); 
         });
     });
 }
