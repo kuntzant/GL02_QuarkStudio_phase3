@@ -3,73 +3,38 @@ const { processCruData } = require('./controller');
 const fs = require('fs');
 const path = require('path');
 const colors = require('colors');
+const readline = require('readline');
 
 const rootPath = path.resolve(__dirname, '../data'); // Dossier contenant les sous-dossiers .cru
 const summary = processCruData(rootPath);
 
-function getRandomElements(arr) {
-    // Mélanger les éléments pour les sélectionner aléatoirement
-    return arr.sort(() => 0.5 - Math.random());
-}
 
-function createSchedule(data, numberOfSubjects = 6) {
-    const subjects = Object.keys(data);
-    const shuffledSubjects = getRandomElements(subjects);
-    const selectedSubjects = [];
+function createSchedule(data, selectedSubjects) {
     const schedule = [];
 
-    // Utilisé pour vérifier les conflits d'horaires
-    const occupiedSlots = {};
-
-    while (selectedSubjects.length < numberOfSubjects && shuffledSubjects.length > 0) {
-        const subject = shuffledSubjects.shift(); // Prendre la première matière aléatoire
+    selectedSubjects.forEach(subject => {
         const subjectData = data[subject];
+        if (!subjectData) {
+            console.warn("La matière ".yellow + subject.cyan+" n'existe pas dans les données.".yellow);
+            return;
+        }
         const courses = subjectData.cours;
 
         const cm = courses.find(c => c.category.startsWith('C'));
         const td = courses.find(c => c.category.startsWith('D'));
         const tp = courses.find(c => c.category.startsWith('T'));
 
-        // Vérifier si un CM et un TD sont disponibles
-        if (!cm || !td) {
-            continue;
-        }
-
-        // Vérifier les conflits pour les créneaux
-        if (!isSlotOccupied(occupiedSlots, cm) &&
-            !isSlotOccupied(occupiedSlots, td) &&
-            (!tp || !isSlotOccupied(occupiedSlots, tp))) {
-
-            // Ajouter la matière et ses cours
-            selectedSubjects.push(subject);
-            schedule.push(formatCourse(subject, cm));
-            schedule.push(formatCourse(subject, td));
-            markSlotAsOccupied(occupiedSlots, cm);
-            markSlotAsOccupied(occupiedSlots, td);
-
-            if (tp) {
-                schedule.push(formatCourse(subject, tp));
-                markSlotAsOccupied(occupiedSlots, tp);
-            }
-        }
-    }
-
-    // Vérifier si le nombre de matières requis est atteint
-    if (selectedSubjects.length < numberOfSubjects) {
-        console.error(`Impossible de créer un emploi du temps avec ${numberOfSubjects} matières.`);
-    }
-
+        const getRandomCourse = (courses, category) => {
+            const filteredCourses = courses.filter(c => c.category.startsWith(category));
+            return filteredCourses[Math.floor(Math.random() * filteredCourses.length)];
+        };
+    
+        if (cm) {schedule.push(formatCourse(subject, getRandomCourse(courses, 'C')));}
+        if (td) {schedule.push(formatCourse(subject, getRandomCourse(courses, 'D')));}
+        if (tp) {schedule.push(formatCourse(subject, getRandomCourse(courses, 'T')));}
+    });
+    
     return schedule;
-}
-
-function isSlotOccupied(occupiedSlots, course) {
-    const key = `${course.day}-${course.time}`;
-    return occupiedSlots[key];
-}
-
-function markSlotAsOccupied(occupiedSlots, course) {
-    const key = `${course.day}-${course.time}`;
-    occupiedSlots[key] = true;
 }
 
 function formatCourse(subject, course) {
@@ -88,8 +53,8 @@ function convertDayToICal(day) {
 }
 
 function convertCategoryToICal(category) {
-    firstLetter = category.charAt(0);
-    const categories = { C: 'CM', D: 'TD', T: 'TP'};
+    const firstLetter = category.charAt(0);
+    const categories = { C: 'CM', D: 'TD', T: 'TP' };
     return categories[firstLetter];
 }
 
@@ -126,15 +91,97 @@ function exportToICalendar(schedule, fileName) {
 
     // Écrire dans le fichier
     fs.writeFileSync(outputPath, icalContent);
-    console.log(`Fichier ICalendar exporté dans : ${outputPath}`);
+    console.log("Fichier ICalendar exporté dans : ".grey + outputPath.italic);
 }
 
-// Générer un emploi du temps et l'afficher
+function checkForConflicts(schedule) {
+    const conflicts = [];
+    const slotMap = {};
+
+    schedule.forEach(course => {
+        const key = `${course.day}-${course.time}`;
+        if (slotMap[key] && slotMap[key] !== course.subject) {
+            conflicts.push({
+                subject1: slotMap[key],
+                subject2: course.subject,
+                day: course.day,
+                time: course.time,
+            });
+        } else {
+            slotMap[key] = course.subject;
+        }
+    });
+
+    return conflicts;
+}
 
 
-const schedule = createSchedule(summary, 6);
-console.log('Emploi du temps généré');
-exportToICalendar(schedule, 'schedule.ics');
 
 
+async function promptICalExport(rl) {
+    console.log("Exportation des cours au format iCalendar".inverse);
+    const courses = await promptUser("Veuillez entrer les codes des cours à exporter (séparés par des virgules) : ", rl);
+    const selectedCourses = courses.toUpperCase().split(',').map(code => code.trim());
+    console.log("Génération de l'emploi du temps...\n".green);
 
+    let schedule = createSchedule(summary, selectedCourses);
+    let conflicts = checkForConflicts(schedule);
+
+    // Tester 100000 emplois du temps pour voir s'il en existe sans conflits
+    let attempts = 0;
+    while (conflicts.length > 0 && attempts < 100000) {
+        attempts++;
+        schedule = createSchedule(summary, selectedCourses);
+        conflicts = checkForConflicts(schedule);
+    }
+
+    const letterForDay = {
+        "L": "Lundi",
+        "MA": "Mardi",
+        "ME": "Mercredi",
+        "J": "Jeudi",
+        "V": "Vendredi",
+        "S": "Samedi",
+        "D": "Dimanche"
+    };
+    const categories = { C: 'CM', D: 'TD', T: 'TP' };
+
+    
+    if (conflicts.length > 0 ) {
+
+        // Filtrer les conflits pour ne garder que ceux liés aux CM (vu que c'est aléatoire, il se peut que juste le dernier emploi du temps ait 2 TD/TP superposés)
+        conflicts = conflicts.filter(conflict => {
+            const course1 = schedule.find(course => course.subject === conflict.subject1 && course.day === conflict.day && course.time === conflict.time);
+            const course2 = schedule.find(course => course.subject === conflict.subject2 && course.day === conflict.day && course.time === conflict.time);
+            return course1 && course2 && course1.category.startsWith('C') && course2.category.startsWith('C');
+        });
+
+        console.warn('Les matières suivantes se superposent :'.yellow);
+        conflicts.forEach(conflict => {
+            console.warn(`${conflict.subject1.cyan} et ${conflict.subject2.cyan} le ${letterForDay[conflict.day].brightYellow} à l'heure ${conflict.time.brightMagenta}`);
+        });
+        console.warn("\nL'emploi du temps n'a pas pu se généré.".yellow)
+    } else {
+        if (schedule.length > 0) {
+            console.log('Emploi du temps :'.grey);
+            schedule.forEach(event => {
+                console.log(`- ${event.subject.cyan} (${categories[event.category.charAt(0)]}) le ${letterForDay[event.day].brightYellow} à ${event.time.brightMagenta} en salle ${event.room.brightCyan}`);
+            });
+            console.log('\n');
+            exportToICalendar(schedule, 'schedule.ics');
+        } else {
+            console.log("Aucun emploi du temps sans conflits n'a pu être généré avec les cours sélectionnés.".red);
+        }
+    }
+}
+
+
+function promptUser(question, rl) {
+    return new Promise(resolve => {
+        rl.question(question, answer => {
+            resolve(answer);
+        });
+    });
+}
+
+module.exports = { promptICalExport };
