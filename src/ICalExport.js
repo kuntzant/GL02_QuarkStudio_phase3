@@ -91,7 +91,7 @@ function exportToICalendar(schedule, fileName) {
 
     // Écrire dans le fichier
     fs.writeFileSync(outputPath, icalContent);
-    console.log("Fichier ICalendar exporté dans : ".grey + outputPath.italic);
+    console.log("Fichier ICalendar exporté dans : ".grey + outputPath.underline.italic);
 }
 
 function checkForConflicts(schedule) {
@@ -158,9 +158,9 @@ async function promptICalExport(rl) {
 
         console.warn('Les matières suivantes se superposent :'.yellow);
         conflicts.forEach(conflict => {
-            console.warn(`${conflict.subject1.cyan} et ${conflict.subject2.cyan} le ${letterForDay[conflict.day].brightYellow} à l'heure ${conflict.time.brightMagenta}`);
+            console.warn(`${conflict.subject1.cyan} et ${conflict.subject2.cyan} le ${letterForDay[conflict.day].brightYellow} à ${conflict.time.brightMagenta}`);
         });
-        console.warn("\nL'emploi du temps n'a pas pu se généré.".yellow)
+        console.warn("\nAucun emploi du temps sans conflits n'a pu être généré.".red);
     } else {
         if (schedule.length > 0) {
             console.log('Emploi du temps :'.grey);
@@ -170,7 +170,7 @@ async function promptICalExport(rl) {
             console.log('\n');
             exportToICalendar(schedule, 'schedule.ics');
         } else {
-            console.log("Aucun emploi du temps sans conflits n'a pu être généré avec les cours sélectionnés.".red);
+            console.log("\nAucun emploi du temps sans conflits n'a pu être généré.".red);
         }
     }
 }

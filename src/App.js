@@ -16,21 +16,19 @@ const rl = readline.createInterface({
 
 // Fonction asynchrone pour afficher le menu
 async function displayMenu() {
-    console.log('\n');
     console.log("\n===============================".blue);
     console.log(" Menu Principal".bold);
     console.log("===============================".blue);
-    console.log("1. Rechercher des salles associées à un cours");
-    console.log("2. Afficher la capacité maximale des salles");
-    console.log("3. Afficher la disponibilités des salles");
-    console.log("4. Afficher les salles libres pour un créneau donné");
-    console.log("5. Exporter des cours au format iCalendar");
-    console.log("6. Vérifier des conflits d’emploi du temps");
-    console.log("7. Analyser l’occupation des salles");
+    console.log("[1] Rechercher des salles associées à un cours");
+    console.log("[2] Afficher la capacité maximale des salles");
+    console.log("[3] Afficher la disponibilités des salles");
+    console.log("[4] Afficher les salles libres pour un créneau donné");
+    console.log("[5] Exporter des cours au format iCalendar");
+    console.log("[6] Vérifier des conflits d’emploi du temps");
+    console.log("[7] Analyser l’occupation des salles");
     console.log('\n');
-    console.log("0. Arrêter le programme");
+    console.log("[0] Arrêter le programme");
     console.log("===============================".blue);
-
     
     const choice = await promptUser("Veuillez choisir une option (0-7) : ");  // Utilisation de 'await' avec la fonction asynchrone
     await handleMenuChoice(choice);  // Attendre avant de redemander une option
