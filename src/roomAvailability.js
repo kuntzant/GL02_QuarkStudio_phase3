@@ -47,18 +47,18 @@ function getRoomAvailability(roomNumber) {
         occupiedSlots[day].forEach(occupied => {
             freeSlots = freeSlots.flatMap(slot => {
                 if (occupied.start >= slot.end || occupied.end <= slot.start) {
-                    return [slot];
+                    return [slot];//pas de chevauchement
                 } else if (occupied.start <= slot.start && occupied.end >= slot.end) {
-                    return [];
+                    return [];// Le créneau occupé couvre entièrement le créneau libre
                 } else if (occupied.start > slot.start && occupied.end < slot.end) {
                     return [
                         { start: slot.start, end: occupied.start },
                         { start: occupied.end, end: slot.end }
-                    ];
+                    ];// Le créneau occupé est à l'intérieur du créneau libre
                 } else if (occupied.start <= slot.start) {
-                    return [{ start: occupied.end, end: slot.end }];
+                    return [{ start: occupied.end, end: slot.end }];// Le créneau occupé commence avant le créneau libre
                 } else {
-                    return [{ start: slot.start, end: occupied.start }];
+                    return [{ start: slot.start, end: occupied.start }];// Le créneau occupé commence après le début du créneau libre
                 }
             });
         });

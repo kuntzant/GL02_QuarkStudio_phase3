@@ -44,6 +44,11 @@ function calculateOccupancyRateForAllRooms() {
             roomOccupancy[room][day].add(`${start}-${end}`);
         });
     }
+    
+    if (Object.keys(roomOccupancy).length === 0) {
+        console.log("Aucune donnée de taux d'occupation n'est disponible.".yellow);
+        return;
+    }
 
     // Calcul du taux d'occupation pour chaque salle
     const openingTime = { start: 8 * 60, end: 20 * 60 }; // 08:00-20:00 en minutes (720 minutes)
