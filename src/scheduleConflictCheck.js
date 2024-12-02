@@ -33,6 +33,11 @@ function detectConflicts(data) {
                 return; 
             }
 
+            // Exclure les conflits liés à la salle EXT1
+            if (room === 'EXT1') {
+                return;
+            }
+
             // Convertis les horaires en minutes
             const { start, end } = parseTimeRange(time);
             
