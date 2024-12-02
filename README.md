@@ -4,7 +4,7 @@
 
 ### Description
 
-Application en ligne de commande développée pour l'université centrale de la république de Sealand (SRU) permettant de gérer l'occupation des salles de cours et l'organisation des emplois du temps.
+Ce projet est une application en ligne de commande développée pour l'université centrale de la république de Sealand (SRU) permettant de gérer l'occupation des salles de cours et l'organisation des emplois du temps.
 
 ### Fonctionnalités
 
@@ -98,6 +98,7 @@ Exemple :
 - Les horaires sont considérés entre 8h00 et 20h00
 - La salle "EXT1" est exclue des vérifications de conflits
 - Les jours sont au format : L, MA, ME, J, V, S, D
+- Les horaires sont à rentrer au format hh:mm-hh:mm
 
 ### Auteurs
 
