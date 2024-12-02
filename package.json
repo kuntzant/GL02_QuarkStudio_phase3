@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "jasmine": "^5.4.0"
   }
 }
