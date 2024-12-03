@@ -1,5 +1,6 @@
 //SPEC 7
 const { processCruData } = require('./controller');
+const { getRoomCapacity } = require('./roomCapacityLogic');
 const readline = require('readline');
 const path = require('path');
 const colors = require('colors');
@@ -46,8 +47,7 @@ function calculateOccupancyRateForAllRooms() {
     }
     
     if (Object.keys(roomOccupancy).length === 0) {
-        console.log("Aucune donnée de taux d'occupation n'est disponible.".yellow);
-        return;
+        return { error: "Aucune donnée de taux d'occupation n'est disponible." };
     }
 
     // Calcul du taux d'occupation pour chaque salle
@@ -72,17 +72,14 @@ function calculateOccupancyRateForAllRooms() {
 
         // Calcul du taux d'occupation : (temps occupé / temps total) * 100
         const occupancyRate = ((totalOccupiedTime) / (totalTimePerDay * weekOrder.length)) * 100;
-
-        occupancyRates.push({ room, occupancyRate });
+        const capacity = getRoomCapacity(room);
+        occupancyRates.push({ room, occupancyRate, capacity});
     }
 
     // Tri par taux d'occupation décroissant
-    occupancyRates.sort((a, b) => b.occupancyRate - a.occupancyRate);
+    occupancyRates.sort((a, b) => b.capacity - a.capacity);
+    return occupancyRates
 
-    console.log("Taux d'occupation des salles trié par ordre décroissant :".inverse);
-    occupancyRates.forEach(({ room, occupancyRate }) => {
-        if (room.trim() !== "") {console.log("Salle " + room.brightCyan + ": " + occupancyRate.toFixed(2).toString().brightGreen + "%".green);}
-    });
 }
 
 // Fonction pour demander à l'utilisateur s'il souhaite calculer le taux d'occupation des salles
@@ -90,7 +87,18 @@ async function promptRoomOccupancy(rl) {
     console.log("Calcul du taux d'occupation des salles".inverse);
     const answer = await promptUser("Souhaitez-vous calculer le taux d'occupation pour toutes les salles ("+ "O".green+ "/"+ "N".red+") ? ", rl);
     if (answer.toUpperCase() === 'O') {
-        calculateOccupancyRateForAllRooms(); 
+        const occupancyRates = calculateOccupancyRateForAllRooms();
+
+        if (occupancyRates.error) {
+            console.log(occupancyRates.error.red);
+        } else {
+            console.log("Taux d'occupation des salles trié par nombre nombre de places".inverse);
+            occupancyRates.forEach(({ room, occupancyRate, capacity }) => {
+                if (room.trim() !== "") {
+                    console.log(`Salle ${room.brightCyan} : Capacité de ${capacity.toString().brightGreen} personnes pour un taux d'occupation de ${occupancyRate.toFixed(2).toString().brightGreen + '%'.brightGreen}`);
+                }
+            });
+        }
     } else {
         console.log("Opération annulée.".yellow);
     }
