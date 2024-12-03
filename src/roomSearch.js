@@ -15,7 +15,7 @@ async function promptCourseCode(rl) {
         console.log("Aucune salle n'a pu être trouvée pour ce cours.".yellow);
     } else {
         // Affichage des salles trouvées
-        console.log("Salles associées au cours " + courseCode.cyan + " :");
+        console.log("Salles associées au cours " + courseCode.toUpperCase().cyan + " :");
         console.log(rooms.join('\n').brightCyan);
     }
 }

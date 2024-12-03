@@ -8,7 +8,7 @@ const { getRoomAvailability } = require('./roomAvailabilityLogic');
 async function promptRoomAvailability(rl) {
     console.log("Disponibilités des salles".inverse);
     const roomNumber = await promptUser("Veuillez entrer le numéro de la salle : ", rl);
-    const availability = getRoomAvailability(roomNumber);
+    const availability = getRoomAvailability(roomNumber.toUpperCase());
 
     const weekOrder = ['L', 'MA', 'ME', 'J', 'V', 'S', 'D'];
     const letterForDay = { // Pour l'affichage
@@ -24,19 +24,19 @@ async function promptRoomAvailability(rl) {
     if (Object.keys(availability).length === 0) {
         console.log("La salle est introuvable ou n'a aucune disponibilité.".red);
     } else {
-        console.log(`Disponibilités pour la salle ${roomNumber.brightCyan} :`);
-        weekOrder.forEach(day => {
-            if (availability[day]) {
-                console.log(`\n${letterForDay[day].brightYellow} :`);
-                availability[day].forEach(slot => {
-                    const startHour = String(Math.floor(slot.start / 60)).padStart(2, '0');
-                    const startMinute = String(slot.start % 60).padStart(2, '0');
-                    const endHour = String(Math.floor(slot.end / 60)).padStart(2, '0');
-                    const endMinute = String(slot.end % 60).padStart(2, '0');
-                    console.log(` - ${startHour}:${startMinute} - ${endHour}:${endMinute}`.brightGreen);
+        console.log("Disponibilités de la salle " + roomNumber.toUpperCase().brightCyan + " :");
+        for (const day of weekOrder) {     // Pour parcourir dans l'ordre de la semaine
+            if (availability[day]) { 
+                const slots = availability[day].map(slot => {
+                    const startHours = String(Math.floor(slot.start / 60)).padStart(2, '0');
+                    const startMinutes = String(slot.start % 60).padStart(2, '0');
+                    const endHours = String(Math.floor(slot.end / 60)).padStart(2, '0');
+                    const endMinutes = String(slot.end % 60).padStart(2, '0');
+                    return `${startHours}:${startMinutes}-${endHours}:${endMinutes}`.brightMagenta;
                 });
+                console.log(`${letterForDay[day].brightYellow}: ${slots.join(', ')}`); // Affichage du style Mardi: 08:00-10:00, 12:00-14:00
             }
-        });
+        }
     }
 }
 

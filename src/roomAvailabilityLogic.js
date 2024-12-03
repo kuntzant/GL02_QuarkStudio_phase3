@@ -19,6 +19,7 @@ function parseTimeRange(timeRange) {
 function getRoomAvailability(roomNumber) {
     const openingTime = { start: 8 * 60, end: 20 * 60 }; // 8h00 à 20h00 en minutes
     const occupiedSlots = {};
+    const availability = {};
 
     for (const courseName in summary) {
         const course = summary[courseName];
@@ -34,7 +35,6 @@ function getRoomAvailability(roomNumber) {
         });
     }
 
-    const availability = {};
     for (const day in occupiedSlots) {
         let freeSlots = [{ start: openingTime.start, end: openingTime.end }];
         occupiedSlots[day].forEach(occupied => {

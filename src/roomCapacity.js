@@ -11,7 +11,7 @@ async function promptRoomNumber(rl) {
     const roomNumber = await promptUser("Veuillez entrer le numéro de la salle : ", rl);
     const capacity=getRoomCapacity(roomNumber.toUpperCase());
     if (capacity > 0) {
-        console.log(`La capacité maximale de la salle ${roomNumber.brightCyan} est de ${capacity} personnes.`);
+        console.log(`La capacité maximale de la salle ${roomNumber.toUpperCase().brightCyan} est de ${capacity.toString().brightGreen} personnes.`);
     } else {
         console.log("La salle est introuvable ou n'a pas de capacité enregistrée.".red);
     }
