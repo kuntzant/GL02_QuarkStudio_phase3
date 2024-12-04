@@ -7,7 +7,8 @@ const rootPath = path.resolve(__dirname, '../../data');
 const summary = processCruData(rootPath);
 
 // Fonction pour rechercher les salles associées à un cours donné
-function searchRoomsForCourse(courseCode) {
+//ajout d'un deuxieme argument pr les test unitaires
+function searchRoomsForCourse(courseCode, data = summary) {
     if (!summary[courseCode]) {
         // Cours introuvable
         return null;

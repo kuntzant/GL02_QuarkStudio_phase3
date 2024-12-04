@@ -1,4 +1,11 @@
 {
+  "name": "gl02_quarkstudio",
+  "version": "1.0.0",
+  "description": "Gestion des Salles de Cours - SRU",
+  "main": "src/App.js",
+  "scripts": {
+    "test": "jasmine"
+  },
   "dependencies": {
     "colors": "^1.4.0"
   },
