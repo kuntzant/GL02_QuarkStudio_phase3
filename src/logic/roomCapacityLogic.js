@@ -7,10 +7,11 @@ const rootPath = path.resolve(__dirname, '../../data');
 const summary = processCruData(rootPath);
 
 // Fonction pour obtenir la capacité maximale d'une salle
-function getRoomCapacity(roomNumber) {
+//ajout d'un argument pour les test unitaires
+function getRoomCapacity(roomNumber, data=summary) {
     let maxCapacity = 0;
-    for (const courseName in summary) {
-        const course = summary[courseName];
+    for (const courseName in data) {
+        const course = data[courseName];
         course.cours.forEach(session => {
             if (session.room === roomNumber && session.participants > maxCapacity) {
                 maxCapacity = session.participants;
