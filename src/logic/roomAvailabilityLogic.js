@@ -16,13 +16,13 @@ function parseTimeRange(timeRange) {
 }
 
 // Fonction pour obtenir la disponibilité d'une salle
-function getRoomAvailability(roomNumber) {
+function getRoomAvailability(roomNumber, data=summary) {
     const openingTime = { start: 8 * 60, end: 20 * 60 }; // 8h00 à 20h00 en minutes
     const occupiedSlots = {};
     const availability = {};
 
-    for (const courseName in summary) {
-        const course = summary[courseName];
+    for (const courseName in data) {
+        const course = data[courseName];
         course.cours.forEach(session => {
             if (session.room === roomNumber) {
                 const { start, end } = parseTimeRange(session.time);
