@@ -32,12 +32,20 @@ function isValidTimeRange(timeRange) {
 }
 
 // Fonction pour obtenir les salles disponibles pour un jour et une plage horaire donnés
-function getAvailableRooms(day, timeRange) {
+function getAvailableRooms(day, timeRange, data = summary) {
+    // Vérification que les données sont cohérentes
+    if (!isValidDay(day)) {
+        return null;
+    }
+    if (!isValidTimeRange(timeRange)) {
+        return null;
+    }
+
     const requestedSlot = parseTimeRange(timeRange);
     const occupiedRooms = new Set();
 
-    for (const courseName in summary) {
-        const course = summary[courseName];
+    for (const courseName in data) {
+        const course = data[courseName];
         course.cours.forEach(session => {
             if (session.day === day) {
                 const sessionSlot = parseTimeRange(session.time);
@@ -51,8 +59,8 @@ function getAvailableRooms(day, timeRange) {
 
     // Obtenir la liste de toutes les salles
     const allRooms = new Set();
-    for (const courseName in summary) {
-        const course = summary[courseName];
+    for (const courseName in data) {
+        const course = data[courseName];
         course.rooms.forEach(room => {
             allRooms.add(room);
         });

@@ -3,27 +3,48 @@ const { getAvailableRooms, isValidDay, isValidTimeRange } = require('../src/logi
 describe("Vérification des salles disponibles pour un créneau horaire donné (SPEC4)", function() {
 
     // Données de test
-    const summary = {
-        "COURSE1": {
+    const testData = {
+        "COURS1": {
             rooms: new Set(["A101", "A102"]),
             cours: [
                 { room: "A101", day: "L", time: "08:00-10:00" },
                 { room: "A102", day: "L", time: "10:00-12:00" }
             ]
         },
-        "COURSE2": {
+        "COURS2": {
             rooms: new Set(["B201"]),
             cours: [
+                { room: "B201", day: "L", time: "08:00-10:00" },
                 { room: "B201", day: "MA", time: "14:00-16:00" }
             ]
         }
     };
 
-    it("devrait retourner les salles disponibles pour un créneau horaire valide", function() {
+    it("devrait retourner aucune salle puisque toutes les salles sont occupées à ce créneau", function() {
         const day = "L";
         const timeRange = "09:00-11:00";
-        const availableRooms = getAvailableRooms(day, timeRange, summary);
+        const availableRooms = getAvailableRooms(day, timeRange, testData);
+        expect(availableRooms).toEqual([]);
+    });
 
-        expect(availableRooms).toEqual(["A102"]);
+    it("devrait retourner toutes les salles du jeu de données", function() {
+        const day = "MA";
+        const timeRange = "12:00-14:00";
+        const availableRooms = getAvailableRooms(day, timeRange, testData);
+        expect(availableRooms).toEqual(["A101", "A102", "B201"]);
+    });
+
+    it("devrait retourner null car le jour n'est pas valide", function() {
+        const day = "JOUR_INVALIDE";
+        const timeRange = "10:00-12:00";
+        const availableRooms = getAvailableRooms(day, timeRange, testData);
+        expect(availableRooms).toEqual(null);
+    });
+
+    it("devrait retourner null car l'heure n'est pas valide", function() {
+        const day = "L";
+        const timeRange = "10:00";
+        const availableRooms = getAvailableRooms(day, timeRange, testData);
+        expect(availableRooms).toEqual(null);
     });
 });
