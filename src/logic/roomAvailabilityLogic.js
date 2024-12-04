@@ -1,9 +1,9 @@
 // SPEC3 - Logique pour obtenir la disponibilité d'une salle
-const { processCruData } = require('./controller');
+const { processCruData } = require('../controller');
 const path = require('path');
 
 // Chemin racine des données et ajout des données CRU
-const rootPath = path.resolve(__dirname, '../data');
+const rootPath = path.resolve(__dirname, '../../data');
 const summary = processCruData(rootPath);
 
 // Fonction pour analyser une plage horaire
@@ -33,6 +33,10 @@ function getRoomAvailability(roomNumber) {
                 occupiedSlots[day].push({ start, end });
             }
         });
+    }
+    // Si ya pas de cours le samedi la salle est libre toute la journée
+    if (!occupiedSlots["S"]) {
+        occupiedSlots["S"] = [];
     }
 
     for (const day in occupiedSlots) {

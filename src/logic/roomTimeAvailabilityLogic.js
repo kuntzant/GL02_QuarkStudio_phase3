@@ -1,9 +1,9 @@
 // SPEC4 - Logique pour obtenir les salles libres pour un créneau donné
-const { processCruData } = require('./controller');
+const { processCruData } = require('../controller');
 const path = require('path');
 
 // Chemin racine des données et ajout des données CRU
-const rootPath = path.resolve(__dirname, '../data'); 
+const rootPath = path.resolve(__dirname, '../../data'); 
 const summary = processCruData(rootPath);
 
 // Fonction pour analyser une plage horaire

@@ -3,7 +3,7 @@
 const readline = require('readline');
 
 const colors = require('colors');
-const { getRoomCapacity } = require('./roomCapacityLogic');
+const { getRoomCapacity } = require('./logic/roomCapacityLogic');
 
 // Fonction pour demander le numéro de la salle à l'utilisateur
 async function promptRoomNumber(rl) {

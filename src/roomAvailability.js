@@ -2,7 +2,7 @@
 
 const readline = require('readline');
 const colors = require('colors');
-const { getRoomAvailability } = require('./roomAvailabilityLogic');
+const { getRoomAvailability } = require('./logic/roomAvailabilityLogic');
 
 // Fonction pour demander la disponibilité d'une salle à l'utilisateur
 async function promptRoomAvailability(rl) {

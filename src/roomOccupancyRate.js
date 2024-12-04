@@ -2,7 +2,7 @@
 
 const readline = require('readline');
 const colors = require('colors');
-const { calculateOccupancyRateForAllRooms } = require('./roomOccupancyRateLogic');
+const { calculateOccupancyRateForAllRooms } = require('./logic/roomOccupancyRateLogic');
 
 
 // Fonction pour demander à l'utilisateur s'il souhaite calculer le taux d'occupation des salles

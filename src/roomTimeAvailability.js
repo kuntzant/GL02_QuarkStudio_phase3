@@ -2,7 +2,7 @@
 // SPEC4 - Affichage pour obtenir les salles libres pour un créneau donné
 const readline = require('readline');
 const colors = require('colors');
-const { getAvailableRooms, isValidDay, isValidTimeRange } = require('./roomTimeAvailabilityLogic');
+const { getAvailableRooms, isValidDay, isValidTimeRange } = require('./logic/roomTimeAvailabilityLogic');
 
 
 const letterForDay = {

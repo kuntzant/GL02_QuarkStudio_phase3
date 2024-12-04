@@ -2,7 +2,7 @@
 
 const readline = require('readline');
 const colors = require('colors');
-const { searchRoomsForCourse } = require('./roomSearchLogic');
+const { searchRoomsForCourse } = require('./logic/roomSearchLogic');
 
 // Fonction pour demander le code du cours à l'utilisateur
 async function promptCourseCode(rl) {

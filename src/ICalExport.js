@@ -163,7 +163,7 @@ async function promptICalExport(rl) {
         console.warn("\nAucun emploi du temps sans conflits n'a pu être généré.".red);
     } else {
         if (schedule.length > 0) {
-            console.log('Emploi du temps :'.grey);
+            console.log('\nEmploi du temps :'.grey);
             schedule.forEach(event => {
                 console.log(`- ${event.subject.cyan} (${categories[event.category.charAt(0)]}) le ${letterForDay[event.day].brightYellow} à ${event.time.brightMagenta} en salle ${event.room.brightCyan}`);
             });

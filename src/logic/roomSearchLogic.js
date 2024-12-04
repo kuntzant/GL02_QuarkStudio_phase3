@@ -1,9 +1,9 @@
 // SPEC1 - Logique de recherche des salles associées à un cours (permet les tests unitaires)
-const { processCruData } = require('./controller');
+const { processCruData } = require('../controller');
 const path = require('path');
 
 // Chemin racine des données et ajout des données CRU
-const rootPath = path.resolve(__dirname, '../data');
+const rootPath = path.resolve(__dirname, '../../data');
 const summary = processCruData(rootPath);
 
 // Fonction pour rechercher les salles associées à un cours donné
