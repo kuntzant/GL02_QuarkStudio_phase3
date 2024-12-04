@@ -34,35 +34,42 @@ function getRoomAvailability(roomNumber) {
             }
         });
     }
-    // Si ya pas de cours le samedi la salle est libre toute la journée
-    if (!occupiedSlots["S"]) {
-        occupiedSlots["S"] = [];
-    }
 
-    for (const day in occupiedSlots) {
-        let freeSlots = [{ start: openingTime.start, end: openingTime.end }];
-        occupiedSlots[day].forEach(occupied => {
-            freeSlots = freeSlots.flatMap(slot => {
-                if (occupied.end <= slot.start || occupied.start >= slot.end) {
-                    return [slot]; // Pas de chevauchement
-                } else if (occupied.start <= slot.start && occupied.end >= slot.end) {
-                    return []; // Le créneau occupé couvre entièrement le créneau libre
-                } else if (occupied.start > slot.start && occupied.end < slot.end) {
-                    return [
-                        { start: slot.start, end: occupied.start },
-                        { start: occupied.end, end: slot.end }
-                    ]; // Le créneau occupé est à l'intérieur du créneau libre
-                } else if (occupied.start <= slot.start && occupied.end < slot.end) {
-                    return [{ start: occupied.end, end: slot.end }]; // Le créneau occupé commence avant et se termine pendant le créneau libre
-                } else if (occupied.start > slot.start && occupied.end >= slot.end) {
-                    return [{ start: slot.start, end: occupied.start }]; // Le créneau occupé commence pendant et se termine après le créneau libre
-                }
+    // Si il n'y a pas de crénaux, la salle n'existe pas
+    if (!Object.keys(occupiedSlots).length > 0) {
+        return {};
+    } else {
+
+        // Si y a pas de cours le samedi la salle est libre toute la journée
+        if (!occupiedSlots["S"]) {
+            occupiedSlots["S"] = [];
+        }
+
+        for (const day in occupiedSlots) {
+            let freeSlots = [{ start: openingTime.start, end: openingTime.end }];
+            occupiedSlots[day].forEach(occupied => {
+                freeSlots = freeSlots.flatMap(slot => {
+                    if (occupied.end <= slot.start || occupied.start >= slot.end) {
+                        return [slot]; // Pas de chevauchement
+                    } else if (occupied.start <= slot.start && occupied.end >= slot.end) {
+                        return []; // Le créneau occupé couvre entièrement le créneau libre
+                    } else if (occupied.start > slot.start && occupied.end < slot.end) {
+                        return [
+                            { start: slot.start, end: occupied.start },
+                            { start: occupied.end, end: slot.end }
+                        ]; // Le créneau occupé est à l'intérieur du créneau libre
+                    } else if (occupied.start <= slot.start && occupied.end < slot.end) {
+                        return [{ start: occupied.end, end: slot.end }]; // Le créneau occupé commence avant et se termine pendant le créneau libre
+                    } else if (occupied.start > slot.start && occupied.end >= slot.end) {
+                        return [{ start: slot.start, end: occupied.start }]; // Le créneau occupé commence pendant et se termine après le créneau libre
+                    }
+                });
             });
-        });
-        availability[day] = freeSlots;
-    }
+            availability[day] = freeSlots;
+        }
 
-    return availability;
+        return availability;
+    }
 }
 
 module.exports = { getRoomAvailability };
