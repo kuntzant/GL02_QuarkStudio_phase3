@@ -14,15 +14,16 @@ async function promptRoomOccupancy(rl) {
         
         if (occupancyRates.error) {
             console.log(occupancyRates.error.red);
-        }else{
-            let sortChoice='';
-            do{
-            sortChoice = await promptUser("Voulez-vous trier par taux d'occupation (1) ou par capacité (2) ? ", rl);
-            if (sortChoice !== '1' && sortChoice !== '2') {
-                console.log("Choix invalide. Veuillez choisir 1 pour trier par taux d'occupation ou 2 pour trier par capacité.".red);
-            }
-        }while(sortChoice !== '1' && sortChoice !== '2');
-            if (sortChoice==='1'){
+        } else {
+            let sortChoice = '';
+            do {
+                sortChoice = await promptUser("Voulez-vous trier par taux d'occupation ("+"1".grey+") ou par capacité ("+"2".grey+") ?  ", rl);
+                if (sortChoice !== '1' && sortChoice !== '2') {
+                    console.log("Choix invalide. Veuillez choisir 1 pour trier par taux d'occupation ou 2 pour trier par capacité.".red);
+                }
+            } while (sortChoice !== '1' && sortChoice !== '2');
+            
+            if (sortChoice === '1') {
                 occupancyRates.sort((a, b) => b.occupancyRate - a.occupancyRate);
                 console.log("Taux d'occupation des salles trié par taux d'occupation :".inverse);
             } else if (sortChoice === '2') {
@@ -33,9 +34,11 @@ async function promptRoomOccupancy(rl) {
                 occupancyRates.sort((a, b) => b.occupancyRate - a.occupancyRate);
             }
 
+            console.log("Salle".padEnd(10) + "Taux d'occupation".padEnd(20) + "Capacité");
+            console.log("-".repeat(60));
             occupancyRates.forEach(({ room, occupancyRate, capacity }) => {
                 if (room.trim() !== "") {
-                    console.log(`Salle ${room.brightCyan} : ${occupancyRate.toFixed(2).toString().brightGreen +'%'.brightGreen} d'occupation et Capacité de ${capacity.toString().brightGreen} personnes`);
+                    console.log(room.brightCyan.padEnd(20) + occupancyRate.toFixed(2).toString().brightGreen +"%".grey.padEnd(25)+ capacity.toString().brightGreen+" personnes".grey);
                 }
             });
         } 
