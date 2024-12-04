@@ -1,4 +1,4 @@
-//SPEC 6
+// SPEC6 - Vérification des conflits d’emploi du temps
 const { processCruData } = require('../controller');
 const readline = require('readline');
 const path = require('path');

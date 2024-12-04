@@ -1,4 +1,4 @@
-// SPEC 5
+// SPEC5 - Exportation des cours au format iCalendar
 const { processCruData } = require('../controller');
 const fs = require('fs');
 const path = require('path');

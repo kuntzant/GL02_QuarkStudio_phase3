@@ -1,4 +1,3 @@
-// roomOccupancyRateLogic.js
 // SPEC7 - Logique pour analyser l'occupation des locaux
 const { processCruData } = require('../controller');
 const { getRoomCapacity } = require('./roomCapacityLogic');
