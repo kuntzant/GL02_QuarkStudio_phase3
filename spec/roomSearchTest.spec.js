@@ -42,7 +42,7 @@ describe("Tests unitaires de roomSearch (SPEC1)", function() {
     });
 
     it("devrait gérer les codes de cours sensibles à la casse", function() {
-        const courseCode = "cours1"; //test en minuscuule
+        const courseCode = "cours1"; //test en minuscule
         const rooms = searchRoomsForCourse(courseCode.toUpperCase(), testData);
         expect(rooms).toEqual(["A101", "A102"]);
     });
