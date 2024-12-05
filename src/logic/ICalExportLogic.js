@@ -9,10 +9,13 @@ const summary = processCruData(rootPath);
 
 // Fonction pour créer un emploi du temps
 function createSchedule(selectedSubjects, data = summary) {
+    if (!Array.isArray(selectedSubjects)) {
+        return null; // Retourne null si ce n'est pas un tableau
+    }
+    
     const schedule = [];
     let subjectNotInData = null;
     let issue = false;
-
 
     selectedSubjects.forEach(subject => {
         const subjectData = data[subject.trim().toUpperCase()];
@@ -109,6 +112,10 @@ function exportToICalendar(schedule, fileName) {
 }
 
 function checkForConflicts(schedule) {
+    // Vérifie si les cours sont bien formés
+    if (!Array.isArray(schedule) || schedule.some(course => !course.subject || !course.day || !course.time)) {
+        return null; // Retourne null si un cours est mal formé
+    }
     const conflicts = [];
     const slotMap = {};
 

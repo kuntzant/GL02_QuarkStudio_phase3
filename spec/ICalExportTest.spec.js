@@ -55,38 +55,49 @@ describe("Exportation des cours au format iCalendar (SPEC5)", function () {
             { subject1: "COURS2", subject2: "COURS3", day: "J", time: "08:00-10:00" },
         ]);
     });
-    // Tester si mauvais schedule
-    /*
+    
+    it("devrait détecter que l'emploi du temps est erroné (il manque la clé day) et renvoyé null", function () {
+        const conflicts = checkForConflicts([
+            { subject: "COURS1", category: "D", room: "A102", time: "08:00-10:00" },
+            { subject: "COURS1", category: "D", room: "A102", day: "L", time: "10:00-12:00" }
+        ]);
+        expect(conflicts).toBeNull();
+    });
+
+    it("devrait détecter que l'emploi du temps est erroné (il n'y a aucun tableau de cours) et renvoyé null", function () {
+        const conflicts = checkForConflicts();
+        expect(conflicts).toBeNull();
+    });
+    
     it("devrait exporter un emploi du temps au format iCalendar", function () {
         const schedule = [
-            { subject: "COURS1", category: "CM", room: "A101", day: "L", time: "08:00-10:00" },
+            { subject: "COURS1", category: "C", room: "A101", day: "L", time: "08:00-10:00" },
+            { subject: "COURS1", category: "D", room: "A102", day: "L", time: "10:00-12:00" },
+            { subject: "COURS1", category: "T", room: "B201", day: "ME", time: "14:00-16:00" },
+            { subject: "COURS2", category: "C", room: "A101", day: "J", time: "08:00-10:00" },
+            { subject: "COURS2", category: "T", room: "B201", day: "MA", time: "14:00-16:00" }
         ];
         const fileName = "test_schedule.ics";
         const filePath = exportToICalendar(schedule, fileName);
-
         expect(filePath).not.toBeNull();
 
         // Vérifier si le fichier a été créé
-        const outputDir = path.resolve(__dirname, '../../output');
+        const outputDir = path.resolve(__dirname, '../output');
         const expectedPath = path.join(outputDir, fileName);
         expect(fs.existsSync(expectedPath)).toBe(true);
 
         // Nettoyer le fichier de test
         fs.unlinkSync(expectedPath);
     });
-
+    
     it("devrait retourner null si l'export échoue", function () {
-        // Forcer une erreur en redirigeant vers un chemin invalide
-        jest.spyOn(fs, 'writeFileSync').mockImplementation(() => { throw new Error(); });
 
+        const invalidPath = '/invalid/path/to/output/test_schedule.ics';
         const schedule = [
-            { subject: "COURSE1", category: "CM", room: "A101", day: "L", time: "08:00-10:00" },
+            { subject: "COURSE1", category: "CM", room: "A101", day: "L", time: "08:00-10:00" }
         ];
-        const filePath = exportToICalendar(schedule, "test_schedule.ics");
-
+        const filePath = exportToICalendar(schedule, invalidPath);
         expect(filePath).toBeNull();
 
-        // Restaurer le comportement de `fs.writeFileSync`
-        jest.restoreAllMocks();
-    });*/
+    });
 });
