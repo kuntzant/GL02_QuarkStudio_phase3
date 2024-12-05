@@ -8,8 +8,9 @@ const summary = processCruData(rootPath);
 
 // Fonction pour obtenir la capacité maximale d'une salle
 //ajout d'un argument pour les test unitaires
-function getRoomCapacity(roomNumber, data=summary) {
+function getRoomCapacity(roomNumber0, data=summary) {
     let maxCapacity = 0;
+    const roomNumber = roomNumber0.trim().toUpperCase();
     for (const courseName in data) {
         const course = data[courseName];
         course.cours.forEach(session => {

@@ -38,7 +38,7 @@ async function displayMenu() {
 // Fonction asynchrone pour traiter les choix du menu
 async function handleMenuChoice(choice) {
     console.log('\n');
-    switch (choice) {
+    switch (choice.trim()) {
         case '1':
             await promptCourseCode(rl);  // Attendre l'entrée dans cette fonction
             break;
@@ -70,7 +70,7 @@ async function handleMenuChoice(choice) {
 
     // Demander à l'utilisateur s'il souhaite faire une autre action
     const continueChoice = await promptUser("\nSouhaitez-vous faire autre chose ?".brightWhite +" ("+ "O".green+ "/"+ "N".red+") : ");
-    if (continueChoice.toUpperCase() === 'O' || continueChoice.toUpperCase() === 'OUI') {
+    if (continueChoice.trim().toUpperCase() === 'O' || continueChoice.trim().toUpperCase() === 'OUI') {
         await displayMenu();  // Redemander une option après l'action
     } else {
         stopProgram();

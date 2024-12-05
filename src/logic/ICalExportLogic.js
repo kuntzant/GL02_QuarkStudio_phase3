@@ -13,8 +13,9 @@ function createSchedule(selectedSubjects, data = summary) {
     let subjectNotInData = null;
     let issue = false;
 
+
     selectedSubjects.forEach(subject => {
-        const subjectData = data[subject];
+        const subjectData = data[subject.trim().toUpperCase()];
 
         // Si la matière n'existe pas dans la base de données, on la stocke et on renvoie un problème
         if (!subjectData) {

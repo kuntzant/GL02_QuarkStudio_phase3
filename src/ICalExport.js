@@ -8,9 +8,8 @@ const { createSchedule, exportToICalendar, checkForConflicts } = require('./logi
 async function promptICalExport(rl) {
     console.log("Exportation des cours au format iCalendar".inverse);
     const courses = await promptUser("Veuillez entrer les codes des cours à exporter (séparés par des virgules) : ", rl);
-    const selectedCourses = courses.toUpperCase().split(',').map(code => code.trim());
 
-    let schedule = createSchedule(selectedCourses);
+    let schedule = createSchedule(courses);
     
     // Vérifie que les matières existent dans la base
     if (typeof schedule === "string") {
@@ -24,7 +23,7 @@ async function promptICalExport(rl) {
         let attempts = 0;
         while (conflicts.length > 0 && attempts < 100000) {
             attempts++;
-            schedule = createSchedule(selectedCourses);
+            schedule = createSchedule(courses);
             conflicts = checkForConflicts(schedule);
         }
 

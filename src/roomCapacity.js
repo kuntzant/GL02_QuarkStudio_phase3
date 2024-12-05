@@ -9,9 +9,9 @@ const { getRoomCapacity } = require('./logic/roomCapacityLogic');
 async function promptRoomNumber(rl) {
     console.log("Capacité maximale des salles".inverse);
     const roomNumber = await promptUser("Veuillez entrer le numéro de la salle : ", rl);
-    const capacity=getRoomCapacity(roomNumber.toUpperCase());
+    const capacity=getRoomCapacity(roomNumber);
     if (capacity > 0) {
-        console.log(`La capacité maximale de la salle ${roomNumber.toUpperCase().brightCyan} est de ${capacity.toString().brightGreen} personnes.`);
+        console.log(`La capacité maximale de la salle ${roomNumber.trim().toUpperCase().brightCyan} est de ${capacity.toString().brightGreen} personnes.`);
     } else {
         console.log("La salle est introuvable ou n'a pas de capacité enregistrée.".red);
     }

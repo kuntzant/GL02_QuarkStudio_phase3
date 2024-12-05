@@ -8,14 +8,14 @@ const { searchRoomsForCourse } = require('./logic/roomSearchLogic');
 async function promptCourseCode(rl) {
     console.log("Recherche des salles associées à un cours".inverse);
     const courseCode = await promptUser("Veuillez entrer le code du cours : ", rl);
-    const rooms=searchRoomsForCourse(courseCode.toUpperCase());
+    const rooms=searchRoomsForCourse(courseCode);
     if (rooms === null) {
         console.log("Le cours est introuvable. Veuillez vérifier le code du cours.".red);
     } else if (rooms.length === 0) {
         console.log("Aucune salle n'a pu être trouvée pour ce cours.".yellow);
     } else {
         // Affichage des salles trouvées
-        console.log("Salles associées au cours " + courseCode.toUpperCase().cyan + " :");
+        console.log("Salles associées au cours " + courseCode.trim().toUpperCase().cyan + " :");
         console.log(rooms.join('\n').brightCyan);
     }
 }

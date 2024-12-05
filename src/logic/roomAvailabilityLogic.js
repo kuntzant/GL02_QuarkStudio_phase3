@@ -15,12 +15,23 @@ function parseTimeRange(timeRange) {
     return { start, end };
 }
 
-// Fonction pour obtenir la disponibilité d'une salle
-function getRoomAvailability(roomNumber, data=summary) {
-    const openingTime = { start: 8 * 60, end: 20 * 60 }; // 8h00 à 20h00 en minutes
-    const occupiedSlots = {};
-    const availability = {};
+// COnverti le format minutes en plage horaire
+function formatTimeSlot(slot) {
+    const startHours = String(Math.floor(slot.start / 60)).padStart(2, '0');
+    const startMinutes = String(slot.start % 60).padStart(2, '0');
+    const endHours = String(Math.floor(slot.end / 60)).padStart(2, '0');
+    const endMinutes = String(slot.end % 60).padStart(2, '0');
+    return `${startHours}:${startMinutes}-${endHours}:${endMinutes}`;
+}
 
+
+// Fonction pour obtenir la disponibilité d'une salle
+function getRoomAvailability(roomNumber0, data = summary) {
+    const openingTime = { start: 8 * 60, end: 20 * 60 }; // 08:00 à 20:00 en minutes
+    const roomNumber = roomNumber0.trim().toUpperCase();
+    const occupiedSlots = {};
+
+    // Parcours des sessions pour trouver les créneaux occupés
     for (const courseName in data) {
         const course = data[courseName];
         course.cours.forEach(session => {
@@ -35,41 +46,42 @@ function getRoomAvailability(roomNumber, data=summary) {
         });
     }
 
-    // Si il n'y a pas de crénaux, la salle n'existe pas
-    if (!Object.keys(occupiedSlots).length > 0) {
-        return {};
-    } else {
-
-        // Si y a pas de cours le samedi la salle est libre toute la journée
-        if (!occupiedSlots["S"]) {
-            occupiedSlots["S"] = [];
-        }
-
-        for (const day in occupiedSlots) {
-            let freeSlots = [{ start: openingTime.start, end: openingTime.end }];
-            occupiedSlots[day].forEach(occupied => {
-                freeSlots = freeSlots.flatMap(slot => {
-                    if (occupied.end <= slot.start || occupied.start >= slot.end) {
-                        return [slot]; // Pas de chevauchement
-                    } else if (occupied.start <= slot.start && occupied.end >= slot.end) {
-                        return []; // Le créneau occupé couvre entièrement le créneau libre
-                    } else if (occupied.start > slot.start && occupied.end < slot.end) {
-                        return [
-                            { start: slot.start, end: occupied.start },
-                            { start: occupied.end, end: slot.end }
-                        ]; // Le créneau occupé est à l'intérieur du créneau libre
-                    } else if (occupied.start <= slot.start && occupied.end < slot.end) {
-                        return [{ start: occupied.end, end: slot.end }]; // Le créneau occupé commence avant et se termine pendant le créneau libre
-                    } else if (occupied.start > slot.start && occupied.end >= slot.end) {
-                        return [{ start: slot.start, end: occupied.start }]; // Le créneau occupé commence pendant et se termine après le créneau libre
-                    }
-                });
-            });
-            availability[day] = freeSlots;
-        }
-
-        return availability;
+    if (Object.keys(occupiedSlots).length === 0) {
+        return {}; // La salle n'existe pas ou n'a pas de sessions
     }
+
+    const weekDays = ['L', 'MA', 'ME', 'J', 'V', 'S'];
+    const availability = {};
+
+    weekDays.forEach(day => {
+        let freeSlots = [{ start: openingTime.start, end: openingTime.end }];
+        const occupied = occupiedSlots[day] || [];
+
+        occupied.forEach(occupiedSlot => {
+            freeSlots = freeSlots.flatMap(slot => {
+                if (occupiedSlot.end <= slot.start || occupiedSlot.start >= slot.end) {
+                    return [slot]; // Pas de chevauchement
+                } else if (occupiedSlot.start <= slot.start && occupiedSlot.end >= slot.end) {
+                    return []; // Le créneau occupé couvre entièrement le créneau libre
+                } else if (occupiedSlot.start > slot.start && occupiedSlot.end < slot.end) {
+                    return [
+                        { start: slot.start, end: occupiedSlot.start },
+                        { start: occupiedSlot.end, end: slot.end }
+                    ];
+                } else if (occupiedSlot.start <= slot.start && occupiedSlot.end < slot.end) {
+                    return [{ start: occupiedSlot.end, end: slot.end }];
+                } else if (occupiedSlot.start > slot.start && occupiedSlot.end >= slot.end) {
+                    return [{ start: slot.start, end: occupiedSlot.start }];
+                }
+            });
+        });
+
+        if (freeSlots.length > 0) {
+            availability[day] = freeSlots.map(slot => formatTimeSlot(slot));
+        }
+    });
+
+    return availability;
 }
 
 module.exports = { getRoomAvailability };
