@@ -18,12 +18,12 @@ function parseTimeRange(timeRange) {
 }
 
 // Fonction pour calculer le taux d'occupation pour toutes les salles
-function calculateOccupancyRateForAllRooms() {
+function calculateOccupancyRateForAllRooms(data = summary) {
     const roomOccupancy = {};
 
     // On parcourt toutes les sessions pour remplir le dictionnaire roomOccupancy
-    for (const courseName in summary) {
-        const course = summary[courseName];
+    for (const courseName in data) {
+        const course = data[courseName];
         course.cours.forEach(session => {
             const { room, day, time } = session;
             const { start, end } = parseTimeRange(time);

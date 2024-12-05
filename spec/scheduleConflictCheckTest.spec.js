@@ -4,7 +4,7 @@ const colors = require('colors');
 
 
 // Suite de tests
-describe("Vérification des conflits d’emploi du temps (SPEC6)", function () {
+describe("Tests unitaires de scheduleConflictCheck (SPEC6)", function () {
 
     // Données de test
     const testData = {

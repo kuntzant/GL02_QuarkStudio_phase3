@@ -1,6 +1,6 @@
 const { getAvailableRooms, isValidDay, isValidTimeRange } = require('../src/logic/roomTimeAvailabilityLogic.js');
 
-describe("Vérification des salles disponibles pour un créneau horaire donné (SPEC4)", function() {
+describe("Tests unitaires de roomTimeAvailability (SPEC4)", function() {
 
     // Données de test
     const testData = {

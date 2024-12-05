@@ -2,7 +2,7 @@ const { createSchedule, exportToICalendar, checkForConflicts } = require('../src
 const fs = require('fs');
 const path = require('path');
 
-describe("Exportation des cours au format iCalendar (SPEC5)", function () {
+describe("Tests unitaires de ICalExport (SPEC5)", function () {
     // Données de test
     const testData = {
         "COURS1": {
