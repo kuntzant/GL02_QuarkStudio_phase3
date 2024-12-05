@@ -8,15 +8,18 @@ const rootPath = path.resolve(__dirname, '../../data');
 const summary = processCruData(rootPath);
 
 // Fonction pour créer un emploi du temps
-function createSchedule(selectedSubjects) {
+function createSchedule(selectedSubjects, data = summary) {
     const schedule = [];
-    const data = summary;
+    let subjectNotInData = null;
+    let issue = false;
 
     selectedSubjects.forEach(subject => {
         const subjectData = data[subject];
+
+        // Si la matière n'existe pas dans la base de données, on la stocke et on renvoie un problème
         if (!subjectData) {
-            console.warn("La matière ".yellow + subject.cyan+" n'existe pas dans les données.".yellow);
-            return;
+            subjectNotInData = subject;
+            return issue = true;
         }
         const courses = subjectData.cours;
 
@@ -33,7 +36,13 @@ function createSchedule(selectedSubjects) {
         if (td) {schedule.push(formatCourse(subject, getRandomCourse(courses, 'D')));}
         if (tp) {schedule.push(formatCourse(subject, getRandomCourse(courses, 'T')));}
     });
+
+    // Renvoie la matière problématique
+    if (issue === true) {
+        return subjectNotInData;
+    }
     
+    // Sinon, renvoie l'emploi du temps complet
     return schedule;
 }
 
