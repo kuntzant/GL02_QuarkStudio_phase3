@@ -25,32 +25,16 @@ describe("Tests unitaires de roomAvailability (SPEC3)", function() {
         }
     };
 
-
-    // Les temps retorus sosont en minutes
-    // 08:00 -> 480
-    // 09:00 -> 540
-    // 10:00 -> 600
-    // 11:00 -> 660
-    // 12:00 -> 720
-    // 13:00 -> 780
-    // 14:00 -> 840
-    // 15:00 -> 900
-    // 16:00 -> 960
-    // 17:00 -> 1020
-    // 18:00 -> 1080
-    // 19:00 -> 1140
-    // 20:00 -> 1200
-    
     it("devrait retourner les créneaux disponibles pour une salle existante avec plusieurs sessions de cours", function() {
         const roomNumber = "A101";
         const availability = getRoomAvailability(roomNumber, testData);
         const expected = {
-            "L": [{ start: 720, end: 1200 }],
-            "MA": [{start: 480, end: 960},{start: 1080 ,end: 1200}],
-            "ME": [{ start: 480, end: 1200 }],
-            "J": [{ start: 480, end: 1200 }],
-            "V": [{ start: 480, end: 1200 }],
-            "S": [{ start: 480, end: 1200 }],
+            "L": ["12:00-20:00"],
+            "MA": ["08:00-16:00", "18:00-20:00"],
+            "ME": ["08:00-20:00"],
+            "J": ["08:00-20:00"],
+            "V": ["08:00-20:00"],
+            "S": ["08:00-20:00"],
         };
         expect(availability).toEqual(expected);
     });
@@ -59,12 +43,12 @@ describe("Tests unitaires de roomAvailability (SPEC3)", function() {
         const roomNumber = "C201";
         const availability = getRoomAvailability(roomNumber, testData);
         const expected = {
-            "L": [{ start: 480, end: 1200 }],
-            "MA": [{start: 480, end: 1200}],
-            "ME": [{ start: 480, end: 1200 }],
-            "J": [{ start: 480, end: 780 }, { start: 900, end: 1200 }],
-            "V": [{ start: 480, end: 1200 }],
-            "S": [{ start: 720, end: 1200 }],
+            "L": ["08:00-20:00"],
+            "MA": ["08:00-20:00"],
+            "ME": ["08:00-20:00"],
+            "J": ["08:00-13:00", "15:00-20:00"],
+            "V": ["08:00-20:00"],
+            "S": ["12:00-20:00"],
         };
         expect(availability).toEqual(expected);
     });
@@ -79,12 +63,12 @@ describe("Tests unitaires de roomAvailability (SPEC3)", function() {
         const roomNumber = "  a101 "; // test en minuscules avec un espace
         const availability = getRoomAvailability(roomNumber, testData);
         const expected = {
-            "L": [{ start: 720, end: 1200 }],
-            "MA": [{start: 480, end: 960},{start: 1080 ,end: 1200}],
-            "ME": [{ start: 480, end: 1200 }],
-            "J": [{ start: 480, end: 1200 }],
-            "V": [{ start: 480, end: 1200 }],
-            "S": [{ start: 480, end: 1200 }],
+            "L": ["12:00-20:00"],
+            "MA": ["08:00-16:00", "18:00-20:00"],
+            "ME": ["08:00-20:00"],
+            "J": ["08:00-20:00"],
+            "V": ["08:00-20:00"],
+            "S": ["08:00-20:00"],
         };
         expect(availability).toEqual(expected);
     });

@@ -22,7 +22,7 @@ describe("Tests unitaires de roomCapacity (SPEC2)", function() {
             ]
         },
         "COURS4": { 
-            cours: [{ room: "D901", participants: 0 }] 
+            cours: [{ room: "D106", participants: 0 }] 
         }
     };
 
@@ -38,8 +38,14 @@ describe("Tests unitaires de roomCapacity (SPEC2)", function() {
         expect(capacite).toEqual(20);
     });
 
+    it("devrait gérer les codes de salles sensibles à la casse", function() {
+        const numeroSalle = " a101  "; // test en minuscules avec un espace
+        const capacite = getRoomCapacity(numeroSalle, donneesTest);
+        expect(capacite).toEqual(35);
+    });
+
     it("devrait retourner 0 pour une salle existante sans participants", function() {
-        const numeroSalle = "D901";
+        const numeroSalle = "D106";
         const capacite = getRoomCapacity(numeroSalle, donneesTest);
         expect(capacite).toEqual(0);
     });

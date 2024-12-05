@@ -8,7 +8,10 @@ const summary = processCruData(rootPath);
 
 // Fonction pour rechercher les salles associées à un cours donné
 //ajout d'un deuxieme argument pr les test unitaires
-function searchRoomsForCourse(courseCode, data = summary) {
+function searchRoomsForCourse(courseCode0, data = summary) {
+
+    const courseCode = courseCode0.trim().toUpperCase();
+
     if (!data[courseCode]) {
         // Cours introuvable
         return null;

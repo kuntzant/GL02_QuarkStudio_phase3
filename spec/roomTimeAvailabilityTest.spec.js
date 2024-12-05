@@ -47,4 +47,12 @@ describe("Vérification des salles disponibles pour un créneau horaire donné (
         const availableRooms = getAvailableRooms(day, timeRange, testData);
         expect(availableRooms).toEqual(null);
     });
+
+    it("devrait gérer les entrées avec des casses différentes", function() {
+        const day = "  l "; // minuscule + espaces
+        const timeRange = " 08:00-10:00  ";
+        const availableRooms = getAvailableRooms(day, timeRange, testData);
+        expect(availableRooms).toEqual(["A102"]);
+    });
+
 });

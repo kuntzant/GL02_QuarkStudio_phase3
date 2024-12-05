@@ -23,12 +23,13 @@ async function promptAvailableRooms(rl) {
 
     let day;
     do {
-        day = (await promptUser("Veuillez entrer le jour de la semaine (L,MA,ME,J,V,S,D) : ", rl)).toUpperCase();
+        day = await promptUser("Veuillez entrer le jour de la semaine (L,MA,ME,J,V,S,D) : ", rl);
         if (!isValidDay(day)) {
             console.log("Jour invalide. Veuillez entrer un jour valide.".red);
         }
     } while (!isValidDay(day));
-
+    
+    day = day.trim().toUpperCase();
 
 
     let timeRange;
@@ -38,6 +39,8 @@ async function promptAvailableRooms(rl) {
             console.log("Plage horaire invalide. Veuillez entrer une plage valide au format hh:mm-hh:mm.".red);
         }
     } while (!isValidTimeRange(timeRange));
+
+    timeRange = timeRange.trim();
 
     const availableRooms = getAvailableRooms(day.toUpperCase(), timeRange);
     if (availableRooms.length === 0) {
@@ -55,7 +58,7 @@ async function promptAvailableRooms(rl) {
                 groupedRooms[firstChar].push(room);
             }
         }
-        console.log("Salles disponibles le " + letterForDay[day].brightYellow + " de " + timeRange.brightMagenta + " :");
+        console.log("Salles disponibles le " + letterForDay[day].brightYellow + " de " + timeRange.trim().brightMagenta + " :");
 
         // Afficher les salles groupées
         for (const [firstChar, rooms] of Object.entries(groupedRooms)) {

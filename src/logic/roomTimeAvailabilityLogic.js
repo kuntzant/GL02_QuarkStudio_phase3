@@ -18,11 +18,12 @@ function parseTimeRange(timeRange) {
 // Fonction pour valider le jour
 function isValidDay(day) {
     const validDays = ['L', 'MA', 'ME', 'J', 'V', 'S', 'D'];
-    return validDays.includes(day.toUpperCase());
+    return validDays.includes(day.trim().toUpperCase());
 }
 
 // Fonction pour valider la plage horaire
-function isValidTimeRange(timeRange) {
+function isValidTimeRange(timeRange0) {
+    const timeRange = timeRange0.trim()
     const timeRegex = /^([01]?\d|2[0-3]):([0-5]\d)-([01]?\d|2[0-3]):([0-5]\d)$/;
     if (!timeRegex.test(timeRange)) {
         return false;
@@ -32,7 +33,11 @@ function isValidTimeRange(timeRange) {
 }
 
 // Fonction pour obtenir les salles disponibles pour un jour et une plage horaire donnés
-function getAvailableRooms(day, timeRange, data = summary) {
+function getAvailableRooms(day0, timeRange0, data = summary) {
+
+    const day = day0.trim().toUpperCase();
+    const timeRange = timeRange0.trim();
+
     // Vérification que les données sont cohérentes
     if (!isValidDay(day)) {
         return null;
