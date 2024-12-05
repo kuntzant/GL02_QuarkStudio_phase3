@@ -19,6 +19,12 @@ describe("Exportation des cours au format iCalendar (SPEC5)", function () {
                 { category: "C", room: "A101", day: "J", time: "08:00-10:00" },
                 { category: "T", room: "B201", day: "MA", time: "14:00-16:00" },
             ],
+        },
+        "COURS3": {
+            rooms: new Set(["A101"]),
+            cours: [
+                { category: "C", room: "A101", day: "J", time: "08:00-10:00" }
+            ],
         }
     };
 
@@ -40,18 +46,16 @@ describe("Exportation des cours au format iCalendar (SPEC5)", function () {
         expect(schedule).toEqual("COURS_INVALIDE");
     });
 
-    /*
+    
     it("devrait détecter les conflits dans l'emploi du temps", function () {
-        const conflictingSchedule = [
-            { subject: "COURS", category: "CM", room: "A101", day: "L", time: "08:00-10:00" },
-            { subject: "COURSE", category: "TP", room: "B201", day: "L", time: "08:00-10:00" },
-        ];
-        const conflicts = checkForConflicts(conflictingSchedule);
-
+        const selectedSubjects = ["COURS2", "COURS3"];
+        const schedule = createSchedule(selectedSubjects, testData);
+        const conflicts = checkForConflicts(schedule);
         expect(conflicts).toEqual([
-            { subject1: "COURS1", subject2: "COURSE2", day: "L", time: "08:00-10:00" },
+            { subject1: "COURS2", subject2: "COURS3", day: "J", time: "08:00-10:00" },
         ]);
     });
+    // Tester si mauvais schedule
     /*
     it("devrait exporter un emploi du temps au format iCalendar", function () {
         const schedule = [
