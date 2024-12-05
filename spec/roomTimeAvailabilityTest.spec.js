@@ -43,7 +43,7 @@ describe("Vérification des salles disponibles pour un créneau horaire donné (
 
     it("devrait retourner null car l'heure n'est pas valide", function() {
         const day = "L";
-        const timeRange = "10:00";
+        const timeRange = "HEURE_INVALIDE";
         const availableRooms = getAvailableRooms(day, timeRange, testData);
         expect(availableRooms).toEqual(null);
     });

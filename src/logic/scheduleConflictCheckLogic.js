@@ -19,11 +19,10 @@ function parseTimeRange(timeRange) {
 }
 
 // Détecte les conflits d'emploi du temps
-function detectConflicts() {
+function detectConflicts(data = summary) {
     const conflicts = [];
+    const malformedSessions = []
     const roomSchedules = {};
-
-    const data = summary;
 
     for (const courseName in data) {
         const course = data[courseName];
@@ -32,7 +31,7 @@ function detectConflicts() {
 
             // Ignorer les sessions avec des données manquantes (genre SD11 qui a pas de salle)
             if (!room || !day || !time) { 
-                console.warn("Session mal formattée:".yellow + '\n', courseName.cyan, session);
+                malformedSessions.push({ courseName, session });
                 return; 
             }
 
@@ -73,7 +72,7 @@ function detectConflicts() {
             roomSchedules[room][day].push({ start, end, time, course: courseName });
         });
     }
-    return conflicts;
+    return { conflicts, malformedSessions };
 }
 
 module.exports = { detectConflicts };
