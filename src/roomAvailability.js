@@ -8,7 +8,7 @@ const { getRoomAvailability } = require('./logic/roomAvailabilityLogic');
 async function promptRoomAvailability(rl) {
     console.log("Disponibilités des salles".inverse);
     const roomNumber = await promptUser("Veuillez entrer le numéro de la salle : ", rl);
-    const availability = getRoomAvailability(roomNumber.toUpperCase());
+    const availability = getRoomAvailability(roomNumber.trim().toUpperCase());
 
     const weekOrder = ['L', 'MA', 'ME', 'J', 'V', 'S', 'D'];
     const letterForDay = { // Pour l'affichage

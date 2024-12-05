@@ -16,10 +16,11 @@ function parseTimeRange(timeRange) {
 }
 
 // Fonction pour obtenir la disponibilité d'une salle
-function getRoomAvailability(roomNumber, data=summary) {
+function getRoomAvailability(roomNumber0, data=summary) {
     const openingTime = { start: 8 * 60, end: 20 * 60 }; // 8h00 à 20h00 en minutes
     const occupiedSlots = {};
     const availability = {};
+    const roomNumber = roomNumber0.trim().toUpperCase();
 
     for (const courseName in data) {
         const course = data[courseName];
@@ -40,10 +41,13 @@ function getRoomAvailability(roomNumber, data=summary) {
         return {};
     } else {
 
-        // Si y a pas de cours le samedi la salle est libre toute la journée
-        if (!occupiedSlots["S"]) {
-            occupiedSlots["S"] = [];
-        }
+        // Si y a pas de cours le samedi la salle est libre toute la journée, on vérifie si elle doit être ajouté
+        const weekDays = ['L', 'MA', 'ME', 'J', 'V', 'S'];
+        weekDays.forEach(day => {
+            if (!occupiedSlots[day]) {
+                occupiedSlots[day] = [];
+            }
+        });
 
         for (const day in occupiedSlots) {
             let freeSlots = [{ start: openingTime.start, end: openingTime.end }];
