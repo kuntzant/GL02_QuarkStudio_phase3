@@ -14,7 +14,7 @@ async function promptRoomOccupancy(rl) {
         do {
             sortChoice = (await promptUser("Voulez-vous trier par taux d'occupation ["+"1".grey+"] ou par capacité ["+"2".grey+"] ?  ", rl)).trim();
             if (sortChoice !== '1' && sortChoice !== '2') {
-                console.log("Choix invalide. Veuillez choisir "+"1".grey+" pour trier par taux d'occupation ou "+"2".grey+" pour trier par capacité.".red);
+                console.log("Choix invalide. Veuillez choisir "+"1".grey+" pour trier par "+"taux d'occupation".red+" ou "+"2".grey+" pour trier "+"par capacité.".red);
             }
         } while (sortChoice !== '1' && sortChoice !== '2');
         

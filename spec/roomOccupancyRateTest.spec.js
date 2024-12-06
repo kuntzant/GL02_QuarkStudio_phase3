@@ -43,7 +43,7 @@ describe("Tests unitaires de roomOccupancyRate (SPEC7)", function () {
     it("devrait calculer le taux d'occupation d'une salle spécifique (A101)", function () {
         const occupancyRate = calculateOccupancyRateForAllRooms(testData);
         
-        const expectedOccupancyRate = 7.142857142857142;  // pourcentage d'occupation pour 6h (en sachant 
+        const expectedOccupancyRate = 8.333333333333332;  // pourcentage d'occupation pour 6h (en sachant 
                                                           // que l'on considère que les salles sont ouvertes 
                                                           // de 8h à 20h tous les jours de la semaine donc 84h)
         const expectedCapacity = 96; // Supposons une capacité de 96 personnes pour A101

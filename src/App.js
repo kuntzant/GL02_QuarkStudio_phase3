@@ -65,16 +65,24 @@ async function handleMenuChoice(choice) {
             return;
         default:
             console.log("Choix invalide. Veuillez choisir une option valide.".red);
-            break;
+            displayMenu();
     }
 
     // Demander à l'utilisateur s'il souhaite faire une autre action
-    const continueChoice = await promptUser("\nSouhaitez-vous faire autre chose ?".brightWhite +" ("+ "O".green+ "/"+ "N".red+") : ");
-    if (continueChoice.trim().toUpperCase() === 'O' || continueChoice.trim().toUpperCase() === 'OUI') {
-        await displayMenu();  // Redemander une option après l'action
-    } else {
-        stopProgram();
-    }
+    let continueChoice;
+    do {
+        continueChoice = (await promptUser("\nSouhaitez-vous faire autre chose ?".brightWhite + " (" + "O".green + "/" + "N".red + ") : ")).trim().toUpperCase();
+        
+        if (continueChoice === 'O' || continueChoice === 'OUI') {
+            await displayMenu();  // Redemander une option après l'action
+            return;  // Sortir du traitement courant
+        } else if (continueChoice === 'N' || continueChoice === 'NON') {
+            stopProgram();
+            return;  // Sortir du traitement courant
+        } else {
+            console.log("\nSaisie invalide. Veuillez entrer 'O' pour Oui ou 'N' pour Non.".red);
+        }
+    } while (continueChoice !== 'O' && continueChoice !== 'N' && continueChoice !== 'NON' && continueChoice !== 'OUI');  // Redemander tant que la saisie n'est pas correcte
 }
 
 // Fonction d'arrêt du programme
