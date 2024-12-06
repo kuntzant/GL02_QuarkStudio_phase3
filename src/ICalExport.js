@@ -42,8 +42,7 @@ async function promptICalExport(rl) {
                 "ME": "Mercredi",
                 "J": "Jeudi",
                 "V": "Vendredi",
-                "S": "Samedi",
-                "D": "Dimanche"
+                "S": "Samedi"
             };
             const categories = { C: 'CM', D: 'TD', T: 'TP' };
 

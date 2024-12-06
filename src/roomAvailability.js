@@ -10,7 +10,7 @@ async function promptRoomAvailability(rl) {
     const roomNumber = await promptUser("Veuillez entrer le numéro de la salle : ", rl);
     const availability = getRoomAvailability(roomNumber.trim().toUpperCase());
 
-    const weekOrder = ['L', 'MA', 'ME', 'J', 'V', 'S', 'D'];
+    const weekOrder = ['L', 'MA', 'ME', 'J', 'V', 'S'];
     const letterForDay = { // Pour l'affichage
         "L": "Lundi",
         "MA": "Mardi",
@@ -18,7 +18,6 @@ async function promptRoomAvailability(rl) {
         "J": "Jeudi",
         "V": "Vendredi",
         "S": "Samedi",
-        "D": "Dimanche"
     };
 
     if (Object.keys(availability).length === 0) {

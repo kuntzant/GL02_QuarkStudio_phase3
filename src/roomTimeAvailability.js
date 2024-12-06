@@ -11,8 +11,7 @@ const letterForDay = {
     "ME": "Mercredi",
     "J": "Jeudi",
     "V": "Vendredi",
-    "S": "Samedi",
-    "D": "Dimanche"
+    "S": "Samedi"
 };
 
 
@@ -23,7 +22,7 @@ async function promptAvailableRooms(rl) {
 
     let day;
     do {
-        day = await promptUser("Veuillez entrer le jour de la semaine (L,MA,ME,J,V,S,D) : ", rl);
+        day = await promptUser("Veuillez entrer le jour de la semaine (L,MA,ME,J,V,S) : ", rl);
         if (!isValidDay(day)) {
             console.log("Jour invalide. Veuillez entrer un jour valide.".red);
         }

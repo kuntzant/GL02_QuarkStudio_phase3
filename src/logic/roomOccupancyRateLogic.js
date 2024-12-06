@@ -42,7 +42,6 @@ function calculateOccupancyRateForAllRooms(data = summary) {
                     J: new Set(),
                     V: new Set(),
                     S: new Set(),
-                    D: new Set()
                 };
             }
 
@@ -58,7 +57,7 @@ function calculateOccupancyRateForAllRooms(data = summary) {
 
     const openingTime = { start: 8 * 60, end: 20 * 60 }; // 08:00-20:00 en minutes (720 minutes)
     const totalTimePerDay = openingTime.end - openingTime.start;
-    const weekOrder = ['L', 'MA', 'ME', 'J', 'V', 'S', 'D'];
+    const weekOrder = ['L', 'MA', 'ME', 'J', 'V', 'S'];
 
     const occupancyRates = [];
 

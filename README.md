@@ -11,7 +11,7 @@ Ce projet est une application en ligne de commande développée pour l'universit
 #### Recherche des salles par cours (SPEC1)
 
 - Permet de rechercher les salles associées à un cours donné
-- Saisie du code du cours (ex: MC01)
+- Saisie du code du cours (ex: MT01)
 
 #### Capacité des salles (SPEC2)
 
@@ -26,7 +26,7 @@ Ce projet est une application en ligne de commande développée pour l'universit
 #### Salles libres par créneau (SPEC4)
 
 - Recherche les salles disponibles pour un jour et un horaire donnés
-- Format d'entrée : Jour (L,MA,ME,J,V,S,D) et plage horaire (HH:MM-HH:MM)
+- Format d'entrée : Jour (L,MA,ME,J,V,S) et plage horaire (HH:MM-HH:MM)
 
 #### Export iCalendar (SPEC5)
 
@@ -64,26 +64,33 @@ node src/App.js
 
 Le programme utilise des fichiers au format `.cru` avec la structure suivante :
 
-```
+```plaintext
 +CODE_COURS
 INDEX,CATEGORIE,PARTICIPANTS,HORAIRE,GROUPE,SALLE//
 ```
 
 Exemple :
 
-```
+```plaintext
 +MT01
 1,C1,P=24,H=J 10:00-12:00,F1,S=N101//
 ```
 
 ### Structure du projet
 
-```
-├── data/                # Fichiers .cru
-├── output/              # Fichiers générés (ics, json)
-└── src/                 # Code source
-     ├── App.js          # Point d'entrée
-     ├── roomSearch.js   # Exemple fichier de logique
+```plaintext
+├── data/                          # Fichiers .cru
+├── output/                        # Fichiers générés (ics, json)
+├── pdf/                           # Fichiers pdf (Cahier des charges et sujet)
+├── spec/                          # Fichiers tests
+     ├── roomSearchTest.spec.js    # Exemple fichier de test
+     └── ...
+└── src/                           # Code source
+     ├── logic/                    # Fichiers logiques
+          ├── roomSearchLogic.js   # Exemple fichier de logique
+          └── ...
+     ├── App.js                    # Point d'entrée
+     ├── roomSearch.js             # Exemple fichier d'affichage
      └── ...
 ```
 
@@ -96,8 +103,7 @@ Exemple :
 ### Notes
 
 - Les horaires sont considérés entre 8h00 et 20h00
-- La salle "EXT1" est exclue des vérifications de conflits
-- Les jours sont au format : L, MA, ME, J, V, S, D
+- Les jours sont au format : L, MA, ME, J, V, S
 - Les horaires sont à rentrer au format hh:mm-hh:mm
 
 ### Auteurs

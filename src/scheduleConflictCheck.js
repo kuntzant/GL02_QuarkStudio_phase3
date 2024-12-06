@@ -14,8 +14,7 @@ async function promptScheduleConflictCheck(rl) {
         "ME": "Mercredi",
         "J": "Jeudi",
         "V": "Vendredi",
-        "S": "Samedi",
-        "D": "Dimanche"
+        "S": "Samedi"
     };
 
     if (conflicts.length === 0) {

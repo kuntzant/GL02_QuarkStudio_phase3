@@ -17,7 +17,7 @@ function parseTimeRange(timeRange) {
 
 // Fonction pour valider le jour
 function isValidDay(day) {
-    const validDays = ['L', 'MA', 'ME', 'J', 'V', 'S', 'D'];
+    const validDays = ['L', 'MA', 'ME', 'J', 'V', 'S'];
     return validDays.includes(day.trim().toUpperCase());
 }
 
