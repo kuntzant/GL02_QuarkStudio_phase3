@@ -26,6 +26,12 @@ function calculateOccupancyRateForAllRooms(data = summary) {
         const course = data[courseName];
         course.cours.forEach(session => {
             const { room, day, time } = session;
+
+            // Ignorer les sessions mal formées
+            if (!room || !day || !time) {
+                return; // Passe à la session suivante
+            }
+
             const { start, end } = parseTimeRange(time);
 
             if (!roomOccupancy[room]) {
@@ -45,6 +51,7 @@ function calculateOccupancyRateForAllRooms(data = summary) {
         });
     }
 
+    // Ne comptabilise pas les salles n'ayant pas de noms
     if (Object.keys(roomOccupancy).length === 0) {
         return { error: "Aucune donnée de taux d'occupation n'est disponible." };
     }
@@ -70,9 +77,12 @@ function calculateOccupancyRateForAllRooms(data = summary) {
 
         // Calcul du taux d'occupation : (temps occupé / temps total) * 100
         const occupancyRate = ((totalOccupiedTime) / (totalTimePerDay * weekOrder.length)) * 100;
-        const capacity = getRoomCapacity(room);
-
-        occupancyRates.push({ room, occupancyRate, capacity });
+        const capacity = getRoomCapacity(room, data);
+        // Ignorer les sessions mal formées
+        if (occupancyRate && capacity) {
+            occupancyRates.push({ room, occupancyRate, capacity });
+        }
+        
     }
 
     // Tri par capacité décroissante

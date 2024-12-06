@@ -11,26 +11,26 @@ describe("Tests unitaires de scheduleConflictCheck (SPEC6)", function () {
         "COURS1": {
             rooms: new Set(["A101", "A102"]),
             cours: [
-                { category: "CM", room: "A101", day: "L", time: "08:00-10:00" },
-                { category: "TD", room: "A102", day: "L", time: "10:00-12:00" }
+                { category: "C1", room: "A101", day: "L", time: "08:00-10:00" },
+                { category: "D1", room: "A102", day: "L", time: "10:00-12:00" }
             ],
         },
         "COURS2": {
             rooms: new Set(["A101"]),
             cours: [
-                { category: "CM", room: "A101", day: "L", time: "09:00-11:00" }
+                { category: "C1", room: "A101", day: "L", time: "09:00-11:00" }
             ],
         },
         "COURS3": {
             rooms: new Set(["A102"]),
             cours: [
-                { category: "CM", room: "A102", day: "L", time: "12:00-14:00" }
+                { category: "C1", room: "A102", day: "L", time: "12:00-14:00" }
             ],
         },
         "COURS4": {
             rooms: new Set(["A101"]),
             cours: [
-                { category: "TP", room: "A101", day: "MA", time: "08:30-10:30" } 
+                { category: "T1", room: "A101", day: "MA", time: "08:30-10:30" } 
             ],
         }
     };
@@ -53,19 +53,19 @@ describe("Tests unitaires de scheduleConflictCheck (SPEC6)", function () {
         "COURS2": {
             rooms: new Set(["A101"]),
             cours: [
-                { category: "CM", room: "A101", day: "L", time: "09:00-11:00" }
+                { category: "C1", room: "A101", day: "L", time: "09:00-11:00" }
             ],
         },
         "COURS3": {
             rooms: new Set(["A102"]),
             cours: [
-                { category: "CM", room: "A102", day: "L", time: "10:00-12:00" }
+                { category: "C1", room: "A102", day: "L", time: "10:00-12:00" }
             ],
         },
         "COURS4": {
             rooms: new Set(["A101"]),
             cours: [
-                { category: "TP", room: "A101", day: "MA", time: "08:30-10:30" } 
+                { category: "T1", room: "A101", day: "MA", time: "08:30-10:30" } 
             ],
         }};
         const { conflicts, malformedSessions } = detectConflicts(testData2);
@@ -78,12 +78,12 @@ describe("Tests unitaires de scheduleConflictCheck (SPEC6)", function () {
         "COURS5": {
             rooms: new Set(["A101"]),
             cours: [
-                { category: "CM", room: null, day: "J", time: null }
+                { category: "C1", room: null, day: "J", time: null }
             ]
         }};
 
         const { conflicts, malformedSessions } = detectConflicts(testData3);
         expect(conflicts).toEqual([]); // Aucun conflit
-        expect(malformedSessions).toEqual([{courseName: 'COURS5', session: { category: 'CM', room: null, day: 'J', time: null }}]);
+        expect(malformedSessions).toEqual([{courseName: 'COURS5', session: { category: 'C1', room: null, day: 'J', time: null }}]);
     });
 });
