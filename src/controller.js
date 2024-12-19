@@ -57,6 +57,7 @@ function saveSummaryToFile(summary, outputFile) {
     const summaryJson = JSON.stringify(summary, null, 2); // Convertir l'objet résumé en chaîne JSON
     fs.writeFileSync(outputFile, summaryJson, 'utf-8'); // Écrire la chaîne JSON dans le fichier de sortie
     console.log(`Résumé sauvegardé dans ${outputFile}`); 
+	onsole.log(`Summary saved in ${outputFile}`); 
 }
 
 // Exemple d'utilisation
@@ -65,12 +66,15 @@ if (require.main === module) {
     const outputFile = path.resolve(__dirname, '../output/summary.json'); // Destination
 
     console.log('Traitement des données...'); 
+	console.log('Data processing...'); 
     const summary = processCruData(rootPath); // Traiter les données CRU et obtenir le résumé
 
     console.log('Sauvegarde du résumé...'); 
+	console.log('Saving the summary...'); 
     saveSummaryToFile(summary, outputFile); // Sauvegarder le résumé dans le fichier de destination
 
     console.log('Terminé !'); 
+	console.log('Done !'); 
 }
 
 module.exports = { processCruData, saveSummaryToFile }; // Exporter les fonctions pour être utilisées dans les SPECs

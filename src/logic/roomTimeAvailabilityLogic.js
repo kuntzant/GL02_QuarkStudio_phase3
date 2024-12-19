@@ -32,6 +32,22 @@ function isValidDay(day) {
     return validDays.includes(day.trim().toUpperCase());
 }
 
+//Fonction pour changer les input de jours en anglais en français 
+function dayEnglishToFrench(day) {
+	if(day=='M'){
+		day='L';
+	}else if (day=='TU'){
+		day='MA';
+	}else if (day=='W'){
+		day='ME';
+	}else if (day=='TH'){
+		day='J';
+	}else if (day=='F'){
+		day='V';
+	}
+	return day;
+}
+
 // Fonction pour valider la plage horaire
 function isValidTimeRange(timeRange0) {
     const timeRange = timeRange0.trim()
@@ -89,4 +105,4 @@ function getAvailableRooms(day0, timeRange0, data = summary) {
     return availableRooms;
 }
 
-module.exports = { getAvailableRooms, isValidDay, isValidTimeRange };
+module.exports = { getAvailableRooms, isValidDay, isValidTimeRange, dayEnglishToFrench };
