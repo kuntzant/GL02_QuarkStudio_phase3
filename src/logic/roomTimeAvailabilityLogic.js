@@ -8,10 +8,21 @@ const summary = processCruData(rootPath);
 
 // Fonction pour analyser une plage horaire
 function parseTimeRange(timeRange) {
-    const [startTime, endTime] = timeRange.split('-').map(time => {
-        const [hours, minutes] = time.split(':').map(Number);
-        return hours * 60 + minutes;
-    });
+	const timeRegex = /^([01]?\d|2[0-3]):([0-5]\d)-([01]?\d|2[0-3]):([0-5]\d)$/;
+	const timeRegex2 = /^([01]?\d|2[0-3])h?([0-5]\d)-([01]?\d|2[0-3])h?([0-5]\d)$/;
+	if (timeRegex2.test(timeRange)){
+		const [startTime, endTime] = timeRange.split('-').map(time => {
+			const [hours, minutes] = time.split('h').map(Number);
+			return hours * 60 + minutes;
+		});
+		return { start: startTime, end: endTime };
+	} else if(timeRegex.test(timeRange)){
+			const [startTime, endTime] = timeRange.split('-').map(time => {
+			const [hours, minutes] = time.split(':').map(Number);
+			return hours * 60 + minutes;
+		});
+		return { start: startTime, end: endTime };
+	} 
     return { start: startTime, end: endTime };
 }
 
@@ -25,10 +36,11 @@ function isValidDay(day) {
 function isValidTimeRange(timeRange0) {
     const timeRange = timeRange0.trim()
     const timeRegex = /^([01]?\d|2[0-3]):([0-5]\d)-([01]?\d|2[0-3]):([0-5]\d)$/;
-    if (!timeRegex.test(timeRange)) {
+	const timeRegex2 = /^([01]?\d|2[0-3])h?([0-5]\d)-([01]?\d|2[0-3])h?([0-5]\d)$/;
+    if (!timeRegex.test(timeRange) && !timeRegex2.test(timeRange)) {
         return false;
     }
-    const { start, end } = parseTimeRange(timeRange);
+    const { start, end } = parseTimeRange(timeRange); 
     return end > start;
 }
 

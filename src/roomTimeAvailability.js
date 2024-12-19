@@ -33,9 +33,10 @@ async function promptAvailableRooms(rl) {
 
     let timeRange;
     do {
-        timeRange = await promptUser("Veuillez entrer la plage horaire (hh:mm-hh:mm) : ", rl);
+        timeRange = await promptUser("Veuillez entrer la plage horaire (hh:mm-hh:mm ou hhhmm-hhhmm) : ", rl);
+		console.log(isValidTimeRange(timeRange));
         if (!isValidTimeRange(timeRange)) {
-            console.log("Plage horaire invalide. Veuillez entrer une plage valide au format hh:mm-hh:mm.".red);
+            console.log("Plage horaire invalide. Veuillez entrer une plage valide au format hh:mm-hh:mm ou hhhmm-hhhmm.".red);
         }
     } while (!isValidTimeRange(timeRange));
 
