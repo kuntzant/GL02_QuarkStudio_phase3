@@ -114,4 +114,10 @@ Exemple :
 - Simon Gelbart
 - Romain Goldenchtein
 
+**GTA :**
+
+- Guillaume Guthier
+- Antoine Kuntz
+- Théo Bousmaha--Jouve
+
 Université de Technologie de Troyes
