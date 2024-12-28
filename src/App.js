@@ -81,7 +81,7 @@ async function handleMenuChoice(choice) {
     // Demander à l'utilisateur s'il souhaite faire une autre action
     let continueChoice;
     do {
-        continueChoice = (await promptUser("\nSouhaitez-vous faire autre chose ?".brightWhite + " (" + "O".green + "/" + "N".red + ") : \nWould you like to do something else ?".brightWhite + " (" + "Y".green + "/" + "N".red + ") : ")).trim().toUpperCase();
+        continueChoice = (await promptUser("\nSouhaitez-vous faire autre chose ?".brightWhite + " (" + "O / OUI".green + " ou " + "N / NON".red + ") : \nWould you like to do something else ?".brightWhite + " (" + "Y / YES".green + " ou " + "N / NO".red + ") : ")).trim().toUpperCase();
         
         if (continueChoice === 'O' || continueChoice === 'OUI' || continueChoice === 'YES' || continueChoice === 'Y') {
             await displayMenu();  // Redemander une option après l'action
@@ -90,8 +90,8 @@ async function handleMenuChoice(choice) {
             stopProgram();
             return;  // Sortir du traitement courant
         } else {
-            console.log("\nSaisie invalide. Veuillez entrer 'O' pour Oui ou 'N' pour Non.".red);
-			console.log("\nInvlaid input. Please enter 'Y' for Yes or 'N' for No.".red);
+            console.log("\nSaisie invalide. Veuillez entrer 'O' / 'OUI' ou 'N' / 'NON'.".red);
+			console.log("\nInvlaid input. Please enter 'Y' / 'YES' or 'N' / 'NO'.".red);
         }
     } while (continueChoice !== 'O' && continueChoice !== 'N' && continueChoice !== 'NON' && continueChoice !== 'OUI' && continueChoice !== 'YES' && continueChoice !== 'Y' && continueChoice !== 'NO');  // Redemander tant que la saisie n'est pas correcte
 }
